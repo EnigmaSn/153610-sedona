@@ -17,7 +17,7 @@
 	  		</nav>
 	  	</div>
   	</header>
-
+		<!-- Куда картинку с главной вставлять и как? -->
   	<main>
 	  	<section class="search-hotels" height="217px" width="100%">
 	  		<div class="infrastructure" width="300px">
@@ -47,9 +47,56 @@
 	  				<h4>Стоимость в сутки (Р):</h4>
 	  				<!-- От 0 до 3000 -->
 	  				<input type="range" min="0" max="3000" step="10" value="500,2500">
+	  				<input type="button" value="Показать">
 	  			</form>
 	  		</div>
 	  	</section>
+
+	  	<section class="results-sort" height="87px">
+	  		<div class="found-n">
+	  			<!-- как это зависит от результата выдачи? -->
+	  			<h3>Найдено: 3</h3>	
+	  		</div>
+	  		<div class="sort">
+	  			<h5>Сортировка:</h5>
+	  			<a href="#">По цене</a>
+	  			<a href="#">По типу</a>
+	  			<a href="#">По рейтингу</a>
+	  		</div>
+	  		<div class="sort-direction"></div>
+	  	</section>
+
+			<!-- какие должны быть размеры дивов? -->
+	  	<article height="151px">
+	  		<div class="hause-image">
+	  			<img src="#" alt="hotel" width="135px" height="90px">
+	  		</div>
+	  		<div class="hause-item">
+					<!-- несу чушь и стараюсь не расплескать -->
+	  			<h3>Amara Resort & Spa</h3>
+	  			<p>Гостиница</p>
+	  			<p>От 3500 р.</p>
+	  			<a href="#" class="more">Подробнее</a>
+	  			<a href="#" class="book">Забронировать</a>
+	  		</div>
+	  		<div class="rating"></div>
+	  	</article>
+
+	  	<article height="151px">
+	  		<div class="hause-image">
+	  			<img src="#" alt="motel" width="135px" height="90px">
+	  		</div>
+	  		<div class="hause-item"></div>
+	  		<div class="rating"></div>
+	  	</article>
+
+	  	<article height="151px">
+	  		<div class="hause-image">
+	  			<img src="#" alt="apartments" width="135px" height="90px">
+	  		</div>
+	  		<div class="hause-item"></div>
+	  		<div class="rating"></div>
+	  	</article>
 
 
 	  </main>
