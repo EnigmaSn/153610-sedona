@@ -15,102 +15,155 @@
 	  				<li><a href="hotels">Гостиницы</a></li>
 	  			</ul>
 	  		</nav>
+	  		<div >
+          <a href="index.html">
+            <img src="#" alt="logo-item">
+          </a>
+        </div>
 	  	</div>
   	</header>
-		<!-- Куда картинку с главной вставлять и как? -->
+		<!-- Куда картинку с главной вставлять и как? 
+		(то, что на главной intro-image -->
   	<main>
-	  	<section class="search-hotels" height="217px" width="100%">
-	  		<div class="infrastructure" width="300px">
-	  			<form>
-	  				<b>Инфраструктура</b>
+	  	<section class="search-hotels">
+	  		<form action="#">
+	  			<div class="infrastructure">
+	  				<h2>Инфраструктура</h2>
 	  				<input id="pool" type="checkbox" checked>
 	  				<label for="pool">Бассейн</label>
 	  				<input id="parking" type="checkbox">
 	  				<label for="parking">Парковка</label>
 	  				<input id="wi-fi" type="checkbox">
 	  				<label for="wi-fi">WI-FI</label>
-	  			</form>
-	  		</div>
-	  		<div class="type-hause" width="300px">
-	  			<form>
-	  				<b>Тип жилья</b>
+	  			</div>
+
+	  			<div class="type-hause">
+	  				<h2>Тип жилья</h2>
 	  				<input id="hotel" type="checkbox" checked>
 	  				<label for="hotel">Гостиница</label>
 	  				<input id="motel" type="checkbox" checked>
 	  				<label for="motel">Мотель</label>
 	  				<input id="apartments" type="checkbox" checked>
 	  				<label for="apartments">Апартаменты</label>
-	  			</form>
-	  		</div>
-	  		<div class="cost" width="600px">
-	  			<form>
-	  				<b>Стоимость в сутки (Р):</b>
+	  			</div>
+
+	  			<div class="cost">
+	  				<h2>Стоимость в сутки (Р):</h2>
 	  				<!-- От 0 до 3000 -->
-	  				<input type="range" min="0" max="3000" step="10" value="500,2500">
+	  				<input type="range" min="0" max="3000" step="100" value="500,2500">
 	  				<input type="button" value="Показать">
-	  			</form>
-	  		</div>
+	  			</div>
+	  		</form>
 	  	</section>
 
-	  	<section class="results-sort" height="87px">
+	  	<section class="results-sort">
 	  		<div class="found-n">
 	  			<!-- как это зависит от результата выдачи? -->
 	  			<h3>Найдено: 3</h3>	
 	  		</div>
 	  		<div class="sort">
 	  			<h5>Сортировка:</h5>
-	  			<a href="#">По цене</a>
-	  			<a href="#">По типу</a>
-	  			<a href="#">По рейтингу</a>
+	  				<ul>
+	  					<li>
+	  						<a href="#">По цене</a>
+	  					</li>
+	  					<li>
+	  						<a href="#">По типу</a>
+	  					</li>
+	  					<li>
+	  						<a href="#">По рейтингу</a>
+	  					</li>
+	  				</ul>		  					 
 	  		</div>
-	  		<div class="sort-direction"></div>
+
+	  		<div class="sort-direction">
+	  			<ul>
+	  				<li>
+	  					<a href="#"></a>
+	  				</li>
+	  				<li>
+	  					<a href="#"></a>
+	  				</li>
+	  			</ul>
+	  		</div>
 	  	</section>
 
-			<!-- какие должны быть размеры дивов? -->
-	  	<article height="151px">
+	  	<article>
 	  		<div class="hause-image">
 	  			<img src="#" alt="hotel" width="135px" height="90px">
 	  		</div>
 	  		<div class="hause-item">
-					<!-- несу чушь и стараюсь не расплескать -->
-	  			<h3>Amara Resort & Spa</h3>
-	  			<p>Гостиница</p>
-	  			<p>От 3500 р.</p>
+	  			<h1>Amara Resort &amp; Spa</h1>
+	  			<span>Гостиница</span>
+	  			<span>От 3500 р.</span>
 	  			<a href="#" class="more">Подробнее</a>
 	  			<a href="#" class="book">Забронировать</a>
 	  		</div>
-	  		<div class="rating"></div>
+	  		<div class="rating">
+	  			<div></div>
+	  			<span>Рейтинг: 8,5</span>
+	  		</div>
 	  	</article>
 
-	  	<article height="151px">
+	  	<article>
 	  		<div class="hause-image">
 	  			<img src="#" alt="motel" width="135px" height="90px">
 	  		</div>
-	  		<div class="hause-item"></div>
-	  		<div class="rating"></div>
+	  		<div class="hause-item">
+	  			<h1>Desert Quail Inn</h1>
+	  			<span>Мотель</span>
+	  			<span>От 2000 р.</span>
+	  			<a href="#" class="more">Подробнее</a>
+	  			<a href="#" class="book">Забронировать</a>
+	  		</div>
+	  		<div class="rating">
+	  			<div></div>
+	  			<span>Рейтинг: 8,9</span>
+	  		</div>
 	  	</article>
 
-	  	<article height="151px">
+	  	<article>
 	  		<div class="hause-image">
 	  			<img src="#" alt="apartments" width="135px" height="90px">
 	  		</div>
-	  		<div class="hause-item"></div>
-	  		<div class="rating"></div>
+	  		<div class="hause-item">
+	  		<h1>Villas at Poco Diablo</h1>
+	  			<span>Апартаменты</span>
+	  			<span>От 4000 р.</span>
+	  			<a href="#" class="more">Подробнее</a>
+	  			<a href="#" class="book">Забронировать</a>
+	  		</div>
+	  		<div class="rating">
+	  			<div></div>
+	  			<span>Рейтинг: 9,2</span>
+	  		</div>
 	  	</article>
-
-
 	  </main>
 
-  	<footer height="120px" width="100%">
-  		<div width="400px">
-  			<b>#visitsedona</b>
+  	<footer>
+  		<div>
+  			<a href="#">
+  				<h2>#visitsedona</h2>
+  			</a>
   		</div>
-  		<div width="400px">
-  			<!-- спрайты? еще б я знала что это -->
+  		<div>
+  			<ul>
+  				<li>
+  					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+  				</li>
+  				<li>
+  					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+  				</li>
+  				<li>
+  					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+  				</li>
+  			</ul>
   		</div>
-  		<div width="400px">
-  			<!-- это картинка? -->
-  			<img src="#" alt="html-academy-logo">
+  		<div>
+  			<a href="#">
+  				<span>website by</span>
+  				<img src="#" alt="html-academy-logo">
+  			</a>
   		</div>
   	</footer>
 	</body>
