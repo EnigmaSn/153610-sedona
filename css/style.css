@@ -68,7 +68,7 @@ li {
 }
 
 .features-blue {
-	background-color: red;
+	background-color: #81b3d2;
 	height: 256px;
 	display: flex;
 	justify-content: center;
@@ -104,7 +104,7 @@ li {
 }
 
 .features-gray {
-	background-color: gray;
+	background-color: #eeeeee;
 	display: flex;
 	justify-content: center;
 }
@@ -144,4 +144,66 @@ li {
 	flex-direction: column;
 }
 
+/* Отели */
+/* Форма */
+
+.form-search-big {
+	background-color: green;
+	display: flex;
+	justify-content: space-around;
+	min-width: 217px;
+}
+
+.infrastructure {
+	display: flex;
+	flex-direction: column;
+}
+
+.type-hause {
+	display: flex;
+	flex-direction: column;
+}
+
+.cost {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Результаты */
+
+.results-sort {
+	background-color: yellow;
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+.sort {
+	display: flex;
+	flex-direction: row;
+}
+
+.sort-types {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/* надо сделать в ряд */
+.sort-direction {
+
+	display: flex;
+	flex-direction: row; /* почему не работает? */
+	justify-content: center;
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+}
+
+.card {
+	background-color: gray;
+	display: flex;
+}
 /* P.S. Не говногод, а собственный стиль */
