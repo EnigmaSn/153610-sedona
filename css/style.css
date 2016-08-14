@@ -28,7 +28,7 @@ h3 {
 }
 
 .menu {
-	min-height: 56px;
+	/*min-height: 56px;*/
 	background-color: green;
 	display: flex;
 	flex-direction: row;
@@ -70,7 +70,7 @@ li {
 
 .features-blue {
 	background-color: #81b3d2;
-	height: 256px;
+	/*height: 256px;*/
 	display: flex;
 	justify-content: center;
 }
@@ -86,7 +86,7 @@ li {
 
 .promo {
 	width: 1200px;
-	height: 330px;
+	/*height: 330px;*/
 	background-color: gray;
 	display: flex;
 	justify-content: space-between;
@@ -131,7 +131,7 @@ li {
 
 .footer {
 	width: 1200px;
-	min-height: 120px;
+	/*min-height: 120px;*/
 	background-color: yellow;
 	display: flex;
 	flex-direction: row;
