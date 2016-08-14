@@ -21,9 +21,127 @@ h3 {
 	font-weight: bold;
 }
 
-/* размер шрифта,
-высоту строки,
-цвет шрифта,
-жирность шрифта,
-гарнитуру (название шрифта).
-*/
+/* Сетка */
+.container {
+	width: 1200px;
+}
+
+.menu {
+	min-height: 56px;
+	background-color: green;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* как подвинуть лого по центру?
++ должно выходить за нижнюю границу */
+
+li {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	outline: 1px solid #000000;
+}
+
+/* откуда маргин? */
+.intro-images {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+}
+
+.features-head {
+	background-color: yellow;
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	margin: auto;
+	align-items: center; /* не работает */
+}
+/* текст д.б по центру*/
+
+.features {
+	width: 1200px;
+}
+
+.features-blue {
+	background-color: red;
+	height: 256px;
+	display: flex;
+	justify-content: center;
+}
+
+.features-image {
+	flex-grow: 1;
+}
+
+.features-item {
+	align-self: center;
+
+}
+
+.promo {
+	width: 1200px;
+	height: 330px;
+	background-color: gray;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+/* не центруются и не выравниваются */
+.promo-item {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.promo-item-food {
+	background-color: yellow;
+}
+
+.features-gray {
+	background-color: gray;
+	display: flex;
+	justify-content: center;
+}
+
+/* Поиск */
+
+.search {
+	background-color: green;
+	width: 568px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: auto;
+}
+
+.search-hotels {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Футер */
+
+.footer {
+	width: 1200px;
+	min-height: 120px;
+	background-color: yellow;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* кнопки не хотят вставать в ряд, черти */
+.social-buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+/* P.S. Не говногод, а собственный стиль */

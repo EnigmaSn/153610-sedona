@@ -10,29 +10,27 @@
   	<header class="main-header">
 	  	<div class="container">
 	  		<nav class="main-navigation">
-	  			<ul>
+	  			<ul class="menu">
 	  				<li><a href="#">Информация</a></li>
 	  				<li><a href="#">Фото и видео</a></li>
+            <li><div class="logo-item">
+                  <a href="#">
+                    <img src="img/logo.png" alt="logo-item">
+                  </a>
+                </div>
 	  				<li><a href="#">Карта штата</a></li>
 	  				<li><a href="hotels.html">Гостиницы</a></li>
 	  			</ul>
 	  		</nav>
-        <div class="logo-item">
-          <a href="#">
-            <img src="img/logo.png" alt="logo-item">
-          </a>
-        </div>
 	  	</div>
   	</header>
 
   	<main class="container">
 
-  		<section class="intro-image">
-  			<!-- 
-        <img src="img/sedona-1.jpg" width="1200" height="773" alt="Sedona-1">
-        это фон -->
-  			<img src="img/sedona-2.png" width="1200" height="57" alt="Sedona-2">
+  		<section class="intro-images">
   			<img src="img/sedona-3.png" width="458" height="352" alt="Sedona-3">
+        <img src="img/sedona-2.png" width="100%" height="57" alt="Sedona-2">
+        <!-- поменяла ширину белой рамки, т.к. она по ТЗ тянуться должна -->
   		</section>
 
   		<section class="features-head">
@@ -52,17 +50,17 @@
   		</section>
 
   		<section class="promo">
-  			<div class="promo-item-hause">
+  			<div class="promo-item promo-item-hause">
   				<img src="#" alt="hause">
   				<h2>Жилье</h2>
   				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
   			</div>
-  			<div class="promo-item-food">
+  			<div class="promo-item promo-item-food">
   				<img src="#" alt="food">
   				<h2>Еда</h2>
   				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
   			</div>
-  			<div class="promo-item-gifts">
+  			<div class=" promo-item promo-item-gifts">
   				<img src="#" alt="gifts">
   				<h2>Сувениры</h2>
   				<p>Не только китайского, но и местного производства!</p>
@@ -120,34 +118,40 @@
 	  			<label for="children">Дети</label>
 	  			<input id="children" type="text">
   			</form>
-        <img src="img/map.jpg" alt="Карта" weidth="100%" height="593px">
   		</section>
   	</main>
 
   	<footer>
-      <div class="visitsedona">
-        <a href="#">#visitsedona</a>
-      </div>
-      <div class="social-buttons">
-        <ul>
-          <li>
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          </li>
-          <li>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          </li>
-          <li>
-            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          </li>
-        </ul>
-      </div>
-      <div class="made-by">
-        <a href="#">
-          <span>website by</span>
-          <!-- спрайт
-          <img src="img/academy-logo.png" alt="html-academy-logo">
-          -->
-        </a>
+      <div class="container">
+        <div class="footer">
+
+          <div class="visitsedona">
+            <a href="#">#visitsedona</a>
+          </div>
+
+          <div class="social-buttons">
+            <ul>
+              <li>
+                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+              </li>
+              <li>
+                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+              </li>
+              <li>
+                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="made-by">
+            <a href="#">
+              <span>website by</span>
+              <!-- спрайт
+              <img src="img/academy-logo.png" alt="html-academy-logo">
+              -->
+            </a>
+          </div>
+        </div>
       </div>
   	</footer>
   </body>
