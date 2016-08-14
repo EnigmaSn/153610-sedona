@@ -13,15 +13,15 @@
 	  			<ul class="menu">
 	  				<li><a href="#">Информация</a></li>
 	  				<li><a href="#">Фото и видео</a></li>
-            <li><div class="logo-item">
-                  <a href="#">
-                    <img src="img/logo.png" alt="logo-item">
-                  </a>
-                </div>
 	  				<li><a href="#">Карта штата</a></li>
 	  				<li><a href="hotels.html">Гостиницы</a></li>
 	  			</ul>
 	  		</nav>
+        <div class="logo-item">
+          <a href="#">
+            <img src="img/logo.png" alt="logo-item">
+          </a>
+        </div>
 	  	</div>
   	</header>
 
@@ -32,22 +32,34 @@
 		  		<form class="form-search-big" action="#">
 		  			<div class="infrastructure">
 		  				<h2>Инфраструктура</h2>
-		  				<input id="pool" type="checkbox" checked>
-		  				<label for="pool">Бассейн</label>
-		  				<input id="parking" type="checkbox">
-		  				<label for="parking">Парковка</label>
-		  				<input id="wi-fi" type="checkbox">
-		  				<label for="wi-fi">WI-FI</label>
+		  				<div class="form-column">
+			  				<input id="pool" type="checkbox" checked>
+			  				<label for="pool">Бассейн</label>
+			  			</div>
+			  			<div class="form-column">
+			  				<input id="parking" type="checkbox">
+			  				<label for="parking">Парковка</label>
+			  			</div>
+			  			<div class="form-column">
+			  				<input id="wi-fi" type="checkbox">
+			  				<label for="wi-fi">WI-FI</label>
+			  			</div>
 		  			</div>
 
 		  			<div class="type-hause">
 		  				<h2>Тип жилья</h2>
-		  				<input id="hotel" type="checkbox" checked>
-		  				<label for="hotel">Гостиница</label>
-		  				<input id="motel" type="checkbox" checked>
-		  				<label for="motel">Мотель</label>
-		  				<input id="apartments" type="checkbox" checked>
-		  				<label for="apartments">Апартаменты</label>
+		  				<div class="form-column">
+			  				<input id="hotel" type="checkbox" checked>
+			  				<label for="hotel">Гостиница</label>
+			  			</div>
+			  			<div class="form-column">
+			  				<input id="motel" type="checkbox" checked>
+			  				<label for="motel">Мотель</label>
+			  			</div>
+			  			<div class="form-column">
+			  				<input id="apartments" type="checkbox" checked>
+			  				<label for="apartments">Апартаменты</label>
+			  				</div>
 		  			</div>
 
 		  			<div class="cost">
@@ -81,7 +93,7 @@
 		  		</div>
 
 		  		<div class="sort-direction">
-		  			<ul>
+		  			<ul class="sort-dir">
 		  				<li>
 		  					<a href="#">up</a>
 		  				</li>
@@ -92,7 +104,6 @@
 		  		</div>
 		  	</section>
 
-				<!-- а где звездюли? -->
 		  	<div class="cards"> 
 			  	<article class="card">
 			  		<div class="hause-image">
@@ -100,18 +111,18 @@
 			  		</div>
 			  		<div class="hause-item">
 			  			<a href="#">
-			  			<h1>Amara Resort &amp; Spa</h1>
+			  				<h1>Amara Resort &amp; Spa</h1>
 			  			</a>
-			  			
-			  			<span>Гостиница</span>
-			  			<span>От 3500 р.</span>
-			  			
-			  			<!-- тут строчку надо перенести. а кто тупит, тот я -->
-			  			<a href="#" class="more">Подробнее</a>
-			  			<a href="#" class="book">Забронировать</a>
+			  			<div class="discrpt">
+				  			<span>Гостиница</span>
+				  			<span>От 3500 р.</span>
+			  			</div>
+			  			<div class="item-but">
+				  			<a href="#" class="more">Подробнее</a>
+				  			<a href="#" class="book">Забронировать</a>
+				  		</div>
 			  		</div>
 			  		<div class="rating">
-			  			<div></div>
 			  			<span>Рейтинг: 8,5</span>
 			  		</div>
 			  	</article>
@@ -124,10 +135,14 @@
 			  			<a href="#">
 			  			<h1>Desert Quail Inn</h1>
 			  			</a>
-			  			<span>Мотель</span>
-			  			<span>От 2000 р.</span>
-			  			<a href="#" class="more">Подробнее</a>
-			  			<a href="#" class="book">Забронировать</a>
+			  			<div class="discrpt">
+			  				<span>Мотель</span>
+			  				<span>От 2000 р.</span>
+			  			</div>
+			  			<div class="item-but">
+			  				<a href="#" class="more">Подробнее</a>
+			  				<a href="#" class="book">Забронировать</a>
+			  			</div>
 			  		</div>
 			  		<div class="rating">
 			  			<div></div>
@@ -143,10 +158,13 @@
 			  			<a href="#">
 			  			<h1>Villas at Poco Diablo</h1>
 			  			</a>
-			  			<span>Апартаменты</span>
-			  			<span>От 4000 р.</span>
-			  			<a href="#" class="more">Подробнее</a>
-			  			<a href="#" class="book">Забронировать</a>
+			  			<div class="discrpt">
+				  			<span>Апартаменты</span>
+				  			<span>От 4000 р.</span>
+			  			<div class="item-but">
+			  				<a href="#" class="more">Подробнее</a>
+			  				<a href="#" class="book">Забронировать</a>
+			  			</div>
 			  		</div>
 			  		<div class="rating">
 			  			<div></div>
@@ -166,15 +184,15 @@
           </div>
 
           <div class="social-buttons">
-            <ul>
+            <ul class="soc-but">
               <li>
-                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                <a class="social-btn social-btn-tw" href="#">Твиттер</a>
               </li>
               <li>
                 <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
               </li>
               <li>
-                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+                <a class="social-btn social-btn-youtube" href="#">Ютьюб</a>
               </li>
             </ul>
           </div>
