@@ -24,6 +24,7 @@ h3 {
 /* Сетка */
 .container {
 	width: 1200px;
+	margin: 0 auto;
 }
 
 .menu {
@@ -200,10 +201,20 @@ li {
 .cards {
 	display: flex;
 	flex-direction: column;
+
 }
 
 .card {
 	background-color: gray;
 	display: flex;
+	justify-content: flex-start;
+	
 }
+
+.hause-item {
+	display: flex;
+	flex-direction: column;
+}
+
+
 /* P.S. Не говногод, а собственный стиль */
