@@ -1,6 +1,6 @@
 body {
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 26px;
 	color: #333333;
 	font-weight: normal;
 	font-family: "PTSans", "Arial", "Serif" url("../fonts/PTSans.ttf");
@@ -21,17 +21,126 @@ h3 {
 	font-weight: bold;
 }
 
+.search h3 {
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+.search p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #333333;
+}
+
+.search a {
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.search label {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+/* как прописать для одной кнопки?*/
+.search #find {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	background-color: #81b3d2;
+	color: #ffffff;
+}
+
+.visitsedona a {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.made-by a {
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.form-search-big h2 {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.form-search-big label {
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+.found-n h3 {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.sort h4 {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.card h1 {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.hause-item span {
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+}
+
+.book-but a {
+	text-align: center;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+.more-but a {
+	text-align: center;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+
+.rating span {
+	text-align: center;
+	font-size: 14px;
+	line-height: 21px;
+	color: #666666;
+}
+
 /* Сетка */
 .container {
 	width: 1200px;
 	margin: 0 auto;
 }
 
+/* не реагирует*/
+.maim-header {
+	padding-left: 72px;
+	padding-right: 72px;
+}
+
 .menu {
 	background-color: #ffffff;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	/*justify-content: space-around;*/
 	align-items: center;
 	margin: 0;
 }
@@ -41,7 +150,18 @@ li {
 	margin-left: 0;
 	padding-left: 0;
 	outline: 1px solid #000000;
+}
+
+.menu li {
 	width: 240px;
+	/* сюда? */
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.menu li:nth-child(2){
+	margin-right:240px;
 }
 
 .intro-images {
@@ -60,6 +180,17 @@ li {
 	text-align: center; 
 }
 
+.features-head h2 {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.features-head p {
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+}
 .features {
 	width: 100%;
 }
@@ -71,6 +202,44 @@ li {
 	align-items: center;
 	text-align: center;
 	flex-grow: 1;
+	color: #ffffff;
+}
+
+.features-blue h2 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.features-blue p {
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+.promo h2 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+}
+
+.promo p {
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+}
+
+.features-gray h2 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+}
+
+.features-gray p {
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
 }
 
 .features-image {
@@ -121,12 +290,18 @@ img {
 	text-align: center;
 }
 
+
+
 .search-but {
 	color: #ffffff;
 	background-color: #766357;
 	width: 568px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+.search-open {
+	background-image: url(../img/map.jpg);
 }
 
 .form-search-hotels {
@@ -151,12 +326,19 @@ img {
 	flex-direction: row;
 }
 
-
 /* Футер */
+
+.main-footer {
+	width: 1200px;
+	background: rgba(255,255,255, 0,9);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
 
 .footer {
 	width: 1200px;
-	/*min-height: 120px;*/
 	background-color: #ffffff;
 	display: flex;
 	flex-direction: row;
@@ -176,7 +358,6 @@ img {
 	background-image: url(../img/sedona-bgrd.jpg);
 	display: flex;
 	justify-content: space-around;
-	/*min-width: 217px;*/
 	color: #ffffff; 
 	/* почему на заголовки не действует?*/
 }
@@ -286,21 +467,18 @@ img {
 	width: 142px;
 }
 
-.book-but a {
-	text-align: center;
-}
-
-.more-but a {
-	text-align: center;
-}
 .more {
 	background-color: #81b3d2;
 	color: #ffffff;
+	padding: 8px 16px;
+	/* если делаю маргин, то он 
+	забирает место из этого же блока. почему? */
 }
 
 .book {
 	background-color: #766357;
 	color: #ffffff;
+	padding: 8px 16px;
 }
 
 .rating {
@@ -310,14 +488,11 @@ img {
 	width: 110px;
 	background-color: #f2f2f2;
 	color: #666666;
-	padding: 8px 17px;
+	padding: 8px 16px;
 	text-align: center;
 }
 
-/* почему уехал последний рейтинг?*/
-
 a {
 	text-decoration: none;
-
 }
 /* P.S. Не говногод, а собственный стиль */
