@@ -138,12 +138,22 @@ h3 {
 	margin: 0 auto;
 }
 
-/* не реагирует*/
-/*.main-header {
-	padding-left: 72px;
-	padding-right: 72px;
-}*/
+.main-header .container {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
 
+.main-header {
+	position: relative;
+}
+
+.logo-item {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
 .menu {
 	background-color: #ffffff;
 	display: flex;
@@ -306,18 +316,23 @@ img {
 
 .search-open {
 	background-image: url(../img/map.jpg);
+	position: relative;
+	height: 595px;
 }
 
 .form-search-hotels {
 	display: flex;
 	flex-direction: column;
 	width: 568px;
-	padding-left: 316px;
-	padding-right: 316px;
+	/*margin-left: 316px;
+	margin-right: 316px;*/
 	justify-content: space-around;
 	align-items: center;
 	/*text-align: center;*/
-	/*background-color: #ffffff;*/ /* не действует*/
+	background-color: #ffffff;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 /*не работает*/
