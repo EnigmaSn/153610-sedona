@@ -5,6 +5,7 @@ body {
 	font-weight: normal;
 	font-family: "PTSans", "Arial", "Serif" url("../fonts/PTSans.ttf");
 	text-transform: uppercase;
+	background-color: #f2f2f2;
 }
 
 h2 {
@@ -18,6 +19,14 @@ h3 {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
+	font-weight: bold;
+}
+
+.menu li {
+	width: 240px;
+	/* сюда? */
+	font-size: 14px;
+	line-height: 26px;
 	font-weight: bold;
 }
 
@@ -40,14 +49,14 @@ h3 {
 	font-weight: bold;
 }
 
-.search label {
+.search-hotels label {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
 }
 
 /* как прописать для одной кнопки?*/
-.search #find {
+.search-hotels .find {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -116,7 +125,6 @@ h3 {
 	color: #ffffff;
 }
 
-
 .rating span {
 	text-align: center;
 	font-size: 14px;
@@ -131,18 +139,18 @@ h3 {
 }
 
 /* не реагирует*/
-.maim-header {
+/*.main-header {
 	padding-left: 72px;
 	padding-right: 72px;
-}
+}*/
 
 .menu {
 	background-color: #ffffff;
 	display: flex;
 	flex-direction: row;
-	/*justify-content: space-around;*/
-	align-items: center;
+	text-align: center;
 	margin: 0;
+	padding: 0;
 }
 
 li {
@@ -150,14 +158,6 @@ li {
 	margin-left: 0;
 	padding-left: 0;
 	outline: 1px solid #000000;
-}
-
-.menu li {
-	width: 240px;
-	/* сюда? */
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: bold;
 }
 
 .menu li:nth-child(2){
@@ -175,7 +175,10 @@ li {
 	background-color: #ffffff;
 	display: flex;
 	flex-direction: column;
-	width: 600px;
+	/*width: 600px;*/
+	width: 100%;
+	padding-left: auto;
+	padding-right: auto;
 	margin: auto;
 	text-align: center; 
 }
@@ -282,6 +285,9 @@ img {
 .search {
 	background-color: #ffffff;
 	width: 568px;
+	/*width: 100%;*/
+	padding-left: 316px;
+	padding-right: 316px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -289,8 +295,6 @@ img {
 	margin: auto;
 	text-align: center;
 }
-
-
 
 .search-but {
 	color: #ffffff;
@@ -308,6 +312,12 @@ img {
 	display: flex;
 	flex-direction: column;
 	width: 568px;
+	padding-left: 316px;
+	padding-right: 316px;
+	justify-content: space-around;
+	align-items: center;
+	/*text-align: center;*/
+	/*background-color: #ffffff;*/ /* не действует*/
 }
 
 /*не работает*/
@@ -427,8 +437,6 @@ img {
 .cards {
 	display: flex;
 	flex-direction: column;
-	padding-left: 72px;
-	padding-right: 72px;
 }
 
 .card {
@@ -436,6 +444,8 @@ img {
 	display: flex;
 	flex-direction: row;
 	align-items: center; /*не сработало?*/
+	padding-left: 72px;
+	padding-right: 72px;
 }
 
 /* не выравнивается по высоте. почему?*/
