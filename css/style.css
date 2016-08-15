@@ -189,7 +189,8 @@ img {
 
 .form-column{
 	display: flex;
-
+	align-self: baseline;
+	/*текст и чеки не выравниваются*/
 }
 
 .type-hause {
@@ -243,7 +244,7 @@ img {
 }
 
 .card {
-	background-color: gray;
+	background-color: #ffffff;
 	display: flex;
 	flex-direction: row;
 	align-items: center; /*не сработало?*/
@@ -283,7 +284,7 @@ img {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	width: 183px;
+	width: 200px;
 	background-color: #f2f2f2;
 	color: #666666;
 	padding: 8px 17px;
