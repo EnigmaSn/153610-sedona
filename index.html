@@ -100,23 +100,30 @@
   			<h3>Заинтересовались?</h3>
   			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <!-- текст в ссылке в спан обернуть? -->
-  			<a href="#">Поиск гостиницы в Седоне</a>
+        <div class="search-but">
+  			 <a href="#">Поиск гостиницы в Седоне</a>
+        </div>
   		</section>
 
   		<section class="search search-hotels">
   			<!-- padding: 55px; -->
   			<form class="form-search-hotels">
-  				<label for="date-in">Дата заезда</label>
-	  			<input id="date-in" type="text">
+          <div class="date-in">
+    				<label for="date-in">Дата заезда</label>
+  	  			<input id="date-in" type="text">
+          </div>
 
-	  			<label for="date-out">Дата выезда</label>
-	  			<input id="date-out" type="text">
-
-	  			<label for="adults">Взрослые</label>
-	  			<input id="adults" type="text">
-
-	  			<label for="children">Дети</label>
-	  			<input id="children" type="text">
+          <div class="date-out">
+  	  			<label for="date-out">Дата выезда</label>
+  	  			<input id="date-out" type="text">
+          </div>
+          <div class="peoples">
+  	  			<label for="adults">Взрослые</label>
+  	  			<input id="adults" type="text">
+  	  			<label for="children">Дети</label>
+  	  			<input id="children" type="text">
+          </div>
+          <input type="button" value="Найти">
   			</form>
   		</section>
   	</main>

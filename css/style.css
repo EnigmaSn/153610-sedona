@@ -28,7 +28,7 @@ h3 {
 }
 
 .menu {
-	background-color: green;
+	background-color: #ffffff;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -44,14 +44,14 @@ li {
 }
 
 .intro-images {
-	background-color: black;
+	background-image: url("../img/sedona-1.jpg");
 	display: flex;
 	flex-direction: column;
 	align-items: center; 
 }
 
 .features-head {
-	background-color: yellow;
+	background-color: #ffffff;
 	display: flex;
 	flex-direction: column;
 	width: 600px;
@@ -87,7 +87,7 @@ img {
 
 .promo {
 	width: 100%;
-	background-color: gray;
+	background-color: #ffffff;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -100,10 +100,6 @@ img {
 	
 }
 
-.promo-item-food {
-	background-color: yellow;
-}
-
 .features-gray {
 	background-color: #eeeeee;
 	display: flex;
@@ -114,7 +110,7 @@ img {
 /* Поиск */
 
 .search {
-	background-color: green;
+	background-color: #ffffff;
 	width: 568px;
 	display: flex;
 	flex-direction: column;
@@ -124,17 +120,43 @@ img {
 	text-align: center;
 }
 
-.search-hotels {
+.search-but {
+	color: #ffffff;
+	background-color: #766357;
+	width: 568px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.form-search-hotels {
 	display: flex;
 	flex-direction: column;
+	width: 568px;
 }
+
+/*не работает*/
+.date-in {
+	display: flex;
+	flex-direction: row;
+}
+
+.date-out {
+	display: flex;
+	flex-direction: row;
+}
+
+.peoples {
+	display: flex;
+	flex-direction: row;
+}
+
 
 /* Футер */
 
 .footer {
 	width: 1200px;
 	/*min-height: 120px;*/
-	background-color: yellow;
+	background-color: #ffffff;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -150,15 +172,19 @@ img {
 /* Форма */
 
 .form-search-big {
-	background-color: green;
+	background-image: url(../img/sedona-bgrd.jpg);
 	display: flex;
 	justify-content: space-around;
 	min-width: 217px;
+	color: #ffffff; 
+	/* почему на заголовки не действует?*/
 }
 
 .infrastructure {
+	color: #ffffff; 
 	display: flex;
 	flex-direction: column;
+	width: 254px;
 }
 
 .form-column{
@@ -166,22 +192,22 @@ img {
 
 }
 
-
-
 .type-hause {
 	display: flex;
 	flex-direction: column;
+	width: 474px;
 }
 
 .cost {
 	display: flex;
 	flex-direction: column;
+	width: 328px;
 }
 
 /* Результаты */
 
 .results-sort {
-	background-color: yellow;
+	background-color: #fefefe;
 	display: flex;
 	justify-content: space-around;
 	align-items: baseline;
@@ -204,7 +230,6 @@ img {
 	justify-content: center;
 }
 
-/* надо сделать в ряд */
 .sort-dir {
 	display: flex;
 	flex-direction: row;
@@ -229,7 +254,6 @@ img {
 .hause-image {
 	margin-right: 20px;
 	width: 135px;
-
 }
 
 .hause-item {
@@ -243,10 +267,31 @@ img {
 	width: 782px;
 }
 
+.more {
+	background-color: #81b3d2;
+	color: #ffffff;
+	padding: 8px 17px;
+}
+
+.book {
+	background-color: #766357;
+	color: #ffffff;
+	padding: 8px 17px;
+}
+
 .rating {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	width: 183px;
+	background-color: #f2f2f2;
+	color: #666666;
+	padding: 8px 17px;
+}
+
+/* почему уехал последний рейтинг?*/
+
+a {
+	text-decoration: none;
 }
 /* P.S. Не говногод, а собственный стиль */
