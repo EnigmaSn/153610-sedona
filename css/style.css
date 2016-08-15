@@ -8,15 +8,15 @@ body {
 }
 
 h2 {
-	font-size: 21px;
-	line-height: 26px;
+	font-size: 16px;
+	line-height: 21px;
 	color: #000000;
 	font-weight: bold;
 }
 
 h3 {
-	font-size: 30px;
-	line-height: 24px;
+	font-size: 21px;
+	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
 }
@@ -41,6 +41,7 @@ li {
 	margin-left: 0;
 	padding-left: 0;
 	outline: 1px solid #000000;
+	width: 240px;
 }
 
 .intro-images {
@@ -175,7 +176,7 @@ img {
 	background-image: url(../img/sedona-bgrd.jpg);
 	display: flex;
 	justify-content: space-around;
-	min-width: 217px;
+	/*min-width: 217px;*/
 	color: #ffffff; 
 	/* почему на заголовки не действует?*/
 }
@@ -184,7 +185,8 @@ img {
 	color: #ffffff; 
 	display: flex;
 	flex-direction: column;
-	width: 254px;
+	width: 264px;
+	padding-left: 72px;
 }
 
 .form-column{
@@ -196,13 +198,14 @@ img {
 .type-hause {
 	display: flex;
 	flex-direction: column;
-	width: 474px;
+	width: 264px;
 }
 
 .cost {
 	display: flex;
 	flex-direction: column;
-	width: 328px;
+	width: 528px;
+	padding-right: 72px;
 }
 
 /* Результаты */
@@ -210,19 +213,20 @@ img {
 .results-sort {
 	background-color: #fefefe;
 	display: flex;
-	justify-content: space-around;
+	/*justify-content: space-around;*/
 	align-items: baseline;
 }
 
 .found-n {
-	width: 135px;
+	width: 165px;
 	margin-right:20px;
+	padding-left: 72px;
 }
 
 .sort {
 	display: flex;
 	flex-direction: row;
-	width: 782px;
+	width: 781px;
 }
 
 .sort-types {
@@ -235,12 +239,15 @@ img {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 183px;
+	width: 110px;
+	padding-right: 72px;
 }
 
 .cards {
 	display: flex;
 	flex-direction: column;
+	padding-left: 72px;
+	padding-right: 72px;
 }
 
 .card {
@@ -248,51 +255,69 @@ img {
 	display: flex;
 	flex-direction: row;
 	align-items: center; /*не сработало?*/
-	padding-top: 20px;
 }
 
 /* не выравнивается по высоте. почему?*/
 .hause-image {
 	margin-right: 20px;
-	width: 135px;
+	width: 165px;
 }
 
 .hause-item {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	width: 781px;
+	flex-wrap: wrap;
 }
 
-.hause-item {
+.hause-name {
+	width: 100%;
+}
+
+.more-but {
 	display: flex;
 	flex-direction: column;
-	width: 782px;
+	width: 110px;
 }
 
+.book-but {
+	display: flex;
+	flex-direction: column;
+	width: 142px;
+}
+
+.book-but a {
+	text-align: center;
+}
+
+.more-but a {
+	text-align: center;
+}
 .more {
 	background-color: #81b3d2;
 	color: #ffffff;
-	padding: 8px 17px;
 }
 
 .book {
 	background-color: #766357;
 	color: #ffffff;
-	padding: 8px 17px;
 }
 
 .rating {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
-	width: 200px;
+	justify-content: center;
+	width: 110px;
 	background-color: #f2f2f2;
 	color: #666666;
 	padding: 8px 17px;
+	text-align: center;
 }
 
 /* почему уехал последний рейтинг?*/
 
 a {
 	text-decoration: none;
+
 }
 /* P.S. Не говногод, а собственный стиль */
