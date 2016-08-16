@@ -28,6 +28,8 @@ h3 {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .search h3 {
@@ -176,9 +178,15 @@ li {
 
 .intro-images {
 	background-image: url("../img/sedona-1.jpg");
+	background-position: 50% 21% ;
 	display: flex;
 	flex-direction: column;
 	align-items: center; 
+	padding-top: 76px;
+}
+
+.mask {
+	padding-top: 23px;
 }
 
 .features-head {
@@ -188,6 +196,8 @@ li {
 	width: 100%;
 	padding-left: auto;
 	padding-right: auto;
+	padding-bottom: 38px;
+	padding-top: 38px;
 	margin: auto;
 	text-align: center; 
 }
@@ -196,6 +206,10 @@ li {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
+	display: block;
+	width: 500px;
+	padding-left: 350px;
+	padding-right: 350px;
 }
 
 .features-head p {
@@ -256,6 +270,7 @@ li {
 
 .features-image {
 	flex-grow: 2;
+	line-height: 0;
 }
 
 img {
@@ -265,6 +280,14 @@ img {
 
 .features-item {
 	width: 400px;
+	padding: 0;
+}
+
+.features-item h2 {
+	width: 240px;
+	display: block;
+	padding-left: 88px;
+	padding-right: 88px;
 }
 
 .promo {
