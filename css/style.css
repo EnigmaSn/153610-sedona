@@ -483,6 +483,11 @@ img {
 	align-items: center; /*не сработало?*/
 	padding-left: 72px;
 	padding-right: 72px;
+	border-top: 1px solid #e5e5e5;
+}
+
+.card:nth-child(3) {
+	border-bottom: 1px solid #e5e5e5
 }
 
 /* не выравнивается по высоте. почему?*/
