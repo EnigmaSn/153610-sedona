@@ -495,15 +495,13 @@ img {
 .more {
 	background-color: #81b3d2;
 	color: #ffffff;
-	padding: 8px 16px;
-	/* если делаю маргин, то он 
-	забирает место из этого же блока. почему? */
+	/*padding: 8px 16px;*/
 }
 
 .book {
 	background-color: #766357;
 	color: #ffffff;
-	padding: 8px 16px;
+	/*padding: 8px 16px;*/
 }
 
 .rating {
@@ -513,7 +511,7 @@ img {
 	width: 110px;
 	background-color: #f2f2f2;
 	color: #666666;
-	padding: 8px 16px;
+	/*padding: 8px 16px;*/
 	text-align: center;
 }
 
