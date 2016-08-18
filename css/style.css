@@ -1,9 +1,15 @@
+@font-face {
+font-family: "ptsans";
+src: url("ptsans.woff2") format("woff2"),
+url("ptsans.woff") format("woff");
+}
+
 body {
 	font-size: 14px;
 	line-height: 26px;
 	color: #333333;
 	font-weight: normal;
-	font-family: "PTSans", "Arial", "Serif" url("../fonts/PTSans.ttf");
+	font-family: "PTSans", "Arial", "Serif";
 	text-transform: uppercase;
 	background-color: #f2f2f2;
 }
