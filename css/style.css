@@ -14,6 +14,53 @@ body {
 	background-color: #f2f2f2;
 }
 
+/* начало иконочного шрифта */
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+
+/* конец иконочного шрифта */
+
+
+
+
 h2 {
 	font-size: 16px;
 	line-height: 21px;
@@ -38,39 +85,7 @@ h3 {
 	padding-bottom: 15px;
 }
 
-.search h3 {
-	font-size: 30px;
-	line-height: 24px;
-	font-weight: bold;
-}
 
-.search p {
-	font-size: 14px;
-	line-height: 24px;
-	color: #333333;
-}
-
-.search a {
-	font-size: 21px;
-	line-height: 26px;
-	color: #ffffff;
-	font-weight: bold;
-}
-
-.search-hotels label {
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: bold;
-}
-
-/* как прописать для одной кнопки?*/
-.search-hotels .find {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-	background-color: #81b3d2;
-	color: #ffffff;
-}
 
 .visitsedona a {
 	font-size: 21px;
@@ -83,11 +98,60 @@ h3 {
 	line-height: 26px;
 }
 
+/* чекбоксы */
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + label {
+	display: block;
+	/*margin: 10px 0;*/
+	margin-bottom: 25px;
+	line-height: 20px;
+	padding-left: 40px;
+	position: relative;
+	cursor: pointer;
+}
+
+input[type="checkbox"] + label:before {
+	content: "\2610";
+	font-size: 26px;
+	font-family: "symbols-sedona";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 15px;
+	height: 15px;
+}
+
+input[type="checkbox"]:checked + label:before {
+	content: "\2611";
+	font-size: 26px;
+	font-family: "symbols-sedona";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 15px;
+	height: 15px;
+}
+/* конец чекбоксов */
+
+.form-search-big {
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
 .form-search-big h2 {
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: bold;
 	color: #ffffff;
+	margin-bottom: 25px;
 }
 
 .form-search-big label {
@@ -175,7 +239,7 @@ li {
 	list-style-type: none;
 	margin-left: 0;
 	padding-left: 0;
-	outline: 1px solid #000000;
+	/*outline: 1px solid #000000;*/
 }
 
 .menu li:nth-child(2){
@@ -202,8 +266,8 @@ li {
 	width: 100%;
 	padding-left: auto;
 	padding-right: auto;
-	padding-bottom: 38px;
-	padding-top: 38px;
+	padding-bottom: 36px;
+	padding-top: 40px;
 	margin: auto;
 	text-align: center; 
 }
@@ -248,24 +312,78 @@ li {
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .promo h2 {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
+	padding-top: 15px;
+}
+
+.promo-item-hause h2:before {
+	content: "";
+	display: block;
+	width: 75px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-image: url(../img/spritesheet.png);
+  background-position: -20px -325px;
+  margin: 30px auto;
+}
+
+.promo-item-food h2:before {
+	content: "";
+	display: block;
+	width: 75px;
+  height: 72px;
+  background-position: -20px -99px;
+  background-repeat: no-repeat;
+  background-image: url(../img/spritesheet.png);
+  margin: 30px auto;
+}
+
+.promo-item-gifts h2:before {
+	content: "";
+	display: block;
+	width: 64px;
+  height: 76px;
+  background-position: -20px -209px;
+  background-repeat: no-repeat;
+  background-image: url(../img/spritesheet.png);
+  margin: 30px auto;
 }
 
 .promo p {
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
+	padding-bottom: 68px;
+}
+
+.promo {
+	width: 100%;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-basis: 1200px;
+	text-align: center;
+}
+
+.promo-item {
+	flex-basis: 400px;
 }
 
 .features-gray h2 {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
+	padding-top: 30px;
+	/*padding-left: 500px;
+	padding-right: 500px;*/
 }
 
 .features-gray p {
@@ -279,7 +397,7 @@ li {
 	line-height: 0;
 }
 
-img {
+.features-image img {
 	max-width:100%; 
 	height: auto;
 }
@@ -296,26 +414,19 @@ img {
 	padding-right: 88px;
 }
 
-.promo {
-	width: 100%;
-	background-color: #ffffff;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-basis: 1200px;
-	text-align: center;
-}
-
-.promo-item {
-	flex-basis: 400px;
-	
-}
 
 .features-gray {
 	background-color: #eeeeee;
 	display: flex;
 	justify-content: center;
 	text-align: center;
+
+}
+
+.features-item-gray p {
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-bottom: 55px;
 }
 
 /* Поиск */
@@ -332,6 +443,44 @@ img {
 	align-items: center;
 	margin: auto;
 	text-align: center;
+}
+
+.search h3 {
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: bold;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+}
+
+.search p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #333333;
+	padding-bottom: 35px;
+}
+
+.search a {
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.search-hotels label {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+/* как прописать для одной кнопки?*/
+.search-hotels .find {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	background-color: #81b3d2;
+	color: #ffffff;
 }
 
 .search-but {
@@ -419,14 +568,13 @@ img {
 	color: #ffffff; 
 	display: flex;
 	flex-direction: column;
-	width: 264px;
+	width: 252px;
 	padding-left: 72px;
 }
 
 .form-column{
 	display: flex;
 	align-self: baseline;
-	/*текст и чеки не выравниваются*/
 }
 
 .type-hause {
@@ -438,12 +586,17 @@ img {
 .cost {
 	display: flex;
 	flex-direction: column;
-	width: 528px;
+	/*width: 528px;*/
+	width: 328px;
+	margin-left: 200px;
 	padding-right: 72px;
 }
 
-/* Результаты */
 
+
+
+
+/* Результаты */
 .results-sort {
 	background-color: #fefefe;
 	display: flex;
