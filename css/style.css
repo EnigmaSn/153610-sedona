@@ -485,11 +485,8 @@ li {
 	display: flex;
 	flex-direction: column;
 	width: 568px;
-	/*margin-left: 316px;
-	margin-right: 316px;*/
 	justify-content: space-around;
 	align-items: center;
-	/*text-align: center;*/
 	background-color: #ffffff;
 	position: absolute;
 	left: 50%;
@@ -507,55 +504,78 @@ li {
 	background-color: #f2f2f2;
 	width: 345px;
 	position: relative;
+	height: 32px;	
+}
+
+.date-in label {
+	margin-right: 16px;
+	line-height: 32px;
 }
 
 .date-out input {
 	/*padding-left: 15px;*/
 	/*margin-left: 10px;*/
 	background-color: #f2f2f2;
-	width: 345px;
-
+	width: 344px;
+	height: 32px;
 }
-.peoples input {
-	/*padding-left: 15px;*/
-	/*margin-left: 15px;*/
-	background-color: #f2f2f2;
-	width: 100px;
-}
-
-.children label {
-
-}
-
-.children input {
-	
-}
-
-.adults label {
-
-}
-
-.adults input {
-
-}
-
 
 .date-in {
 	display: flex;
 	flex-direction: row;
-	padding-top: 60px;
+	padding-top: 54px;
 }
 
 .date-out {
 	display: flex;
 	flex-direction: row;
-	padding-top: 35px;
+	padding-top: 30px;
+}
+
+.date-out label {
+	margin-right: 10px;
+	line-height: 32px;
 }
 
 .peoples {
 	display: flex;
 	flex-direction: row;
-	padding-top: 35px;
+	padding-top: 30px;
+	width: 460px;
+}
+
+.adults {
+	width: 230px;
+}
+
+.children {
+	/*width: 230px;*/
+	padding-left: 53px;
+}
+
+.peoples input {
+	/*padding-left: 15px;*/
+	/*margin-left: 15px;*/
+	background-color: #f2f2f2;
+	
+	height: 32px;
+}
+
+.children label {
+	line-height: 32px;
+}
+
+.children input {
+	width: 112px;
+}
+
+.adults label {
+	margin-right: 27px;
+	line-height: 32px;
+}
+
+.adults input {
+	width: 113px;
 }
 
 .find {
@@ -681,10 +701,12 @@ li {
 	font-size: 23px;
 	line-height: 20px;
 	text-align: center;
+	font-family: "symbols-sedona";
 }
 
 .sort-dir-up {
 	content: "\25b2";
+	font-family: "symbols-sedona";
 }
 /* .social-btn {
 	display: inline-block;
@@ -813,11 +835,23 @@ a {
 	align-items: center;
 }
 
-/*.soc-but {
-	display: flex;
-	flex-direction: row;
+.visitsedona {
+	width: 400px;
+	text-align: center;
 }
-*/
+
+.visitsedona a {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	/*margin-left: 40px;*/
+}
+
+.social-buttons {
+	/*margin-left: 50px;*/
+	width: 400px;
+	text-align: center;
+}
 
 .social-btn {
 	display: inline-block;
@@ -847,23 +881,19 @@ a {
 	line-height: 48px;
 }
 
-.visitsedona a {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-}
-
 .made-by a {
 	font-size: 14px;
 	line-height: 26px;
+	
 }
 
 .made-by {
 	display: inline-block;
 	vertical-align: top;
+	width: 400px;
+	text-align: center;
 }
 
-/* почему он не в строчку? */
 .website-by:after {
 	content: "";
 	display: inline-block;
@@ -872,6 +902,8 @@ a {
   background-position: -20px -20px;
   background-repeat: no-repeat;
   background-image: url(../img/spritesheet.png);
+	margin-left: 10px;
+  vertical-align: middle;
 }
 
 .website-by:hover:after {
@@ -882,6 +914,7 @@ a {
   background-position: -20px -99px;
   background-repeat: no-repeat;
   background-image: url(../img/spritesheet.png);
+	
 }
 
 .website-by:active:after {
