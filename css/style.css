@@ -58,9 +58,6 @@ body {
 
 /* конец иконочного шрифта */
 
-
-
-
 h2 {
 	font-size: 16px;
 	line-height: 21px;
@@ -83,19 +80,6 @@ h3 {
 	font-weight: bold;
 	padding-top: 15px;
 	padding-bottom: 15px;
-}
-
-
-
-.visitsedona a {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-}
-
-.made-by a {
-	font-size: 14px;
-	line-height: 26px;
 }
 
 /* чекбоксы */
@@ -330,7 +314,7 @@ li {
   height: 76px;
   background-repeat: no-repeat;
   background-image: url(../img/spritesheet.png);
-  background-position: -20px -325px;
+  background-position: -20px -483px;
   margin: 30px auto;
 }
 
@@ -339,7 +323,7 @@ li {
 	display: block;
 	width: 75px;
   height: 76px;
-  background-position: -20px -99px;
+  background-position: -20px -257px;
   background-repeat: no-repeat;
   background-image: url(../img/spritesheet.png);
   margin: 30px auto;
@@ -350,7 +334,7 @@ li {
 	display: block;
 	width: 64px;
   height: 76px;
-  background-position: -20px -209px;
+  background-position: -20px -367px;
   background-repeat: no-repeat;
   background-image: url(../img/spritesheet.png);
   margin: 30px auto;
@@ -486,9 +470,9 @@ li {
 .search-but {
 	color: #ffffff;
 	background-color: #766357;
-	width: 568px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	width: 569px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .search-open {
@@ -510,48 +494,97 @@ li {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
+
 }
 
-/*не работает*/
+.search-open label {
+	margin-right: 20px;
+}
+
+.date-in input {
+	/*padding-left: 15px;*/
+	/*margin-left: 10px;*/
+	background-color: #f2f2f2;
+	width: 345px;
+	position: relative;
+}
+
+.date-out input {
+	/*padding-left: 15px;*/
+	/*margin-left: 10px;*/
+	background-color: #f2f2f2;
+	width: 345px;
+
+}
+.peoples input {
+	/*padding-left: 15px;*/
+	/*margin-left: 15px;*/
+	background-color: #f2f2f2;
+	width: 100px;
+}
+
+.children label {
+
+}
+
+.children input {
+	
+}
+
+.adults label {
+
+}
+
+.adults input {
+
+}
+
+
 .date-in {
 	display: flex;
 	flex-direction: row;
+	padding-top: 60px;
 }
 
 .date-out {
 	display: flex;
 	flex-direction: row;
+	padding-top: 35px;
 }
 
 .peoples {
 	display: flex;
 	flex-direction: row;
+	padding-top: 35px;
 }
 
-/* Футер */
-
-.main-footer {
-	width: 1200px;
-	background: rgba(255,255,255, 0,9);
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
+.find {
+	padding: 15px 197px;
+	margin-top: 55px;
+	margin-bottom: 55px;
+	box-shadow: none; /* ???? */
 }
 
-.footer {
-	width: 1200px;
-	background-color: #ffffff;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-}
 
-.soc-but {
-	display: flex;
-	flex-direction: row;
+/* иконки формы*/
+
+/* .promo-item-hause h2:before {
+	content: "";
+	display: block;
+	width: 75px;
+  height: 76px;
+  background-repeat: no-repeat;
+  background-image: url(../img/spritesheet.png);
+  background-position: -20px -325px;
+  margin: 30px auto;
 }
+*/
+
+
+
+/* конец иконок формы*/
+
+
 
 /* Отели */
 /* Форма */
@@ -596,6 +629,8 @@ li {
 
 
 
+
+
 /* Результаты */
 .results-sort {
 	background-color: #fefefe;
@@ -629,6 +664,59 @@ li {
 	width: 110px;
 	padding-right: 72px;
 }
+
+.sort-dir {
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	font-size: 10px;
+	/*background-color: #81b3d2;*/
+	color: #cccccc;
+	
+	/*margin-right: 2px;*/
+}
+
+.sort-dir span {
+	font-size: 23px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.sort-dir-up {
+	content: "\25b2";
+}
+/* .social-btn {
+	display: inline-block;
+	vertical-align: top;
+	width: 46px;
+	height: 48px;
+	font-size: 0;
+	background-color: #81b3d2;
+	position: relative;
+	color: #ffffff;
+	text-align: center;
+	margin-right: 2px;
+}
+
+.social-btn:hover {
+	background-color: #669ec0;
+}
+*/
+/* 
+input[type="checkbox"]:checked + label:before {
+	content: "\2611";
+	font-size: 26px;
+	font-family: "symbols-sedona";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 15px;
+	height: 15px;*/
+
+
 
 .cards {
 	display: flex;
@@ -704,4 +792,106 @@ li {
 a {
 	text-decoration: none;
 }
+
+/* Футер */
+
+.main-footer {
+	width: 1200px;
+	background: rgba(255,255,255, 0,9);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer {
+	width: 1200px;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*.soc-but {
+	display: flex;
+	flex-direction: row;
+}
+*/
+
+.social-btn {
+	display: inline-block;
+	vertical-align: top;
+	width: 46px;
+	height: 48px;
+	font-size: 0;
+	background-color: #81b3d2;
+	position: relative;
+	color: #ffffff;
+	text-align: center;
+	margin-right: 2px;
+}
+
+.social-btn:hover {
+	background-color: #669ec0;
+}
+
+.social-btn:active {
+	background-color: #5496bd;
+	/*opacity: 0.3;*/
+	color: #88b6d1;
+}  /*внезапно перестал работать */
+
+.social-btn span {
+	font-size: 19px;
+	line-height: 48px;
+}
+
+.visitsedona a {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.made-by a {
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.made-by {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* почему он не в строчку? */
+.website-by:after {
+	content: "";
+	display: inline-block;
+	width: 113px;
+  height: 39px;
+  background-position: -20px -20px;
+  background-repeat: no-repeat;
+  background-image: url(../img/spritesheet.png);
+}
+
+.website-by:hover:after {
+	content: "";
+	display: inline-block;
+	width: 113px;
+  height: 39px;
+  background-position: -20px -99px;
+  background-repeat: no-repeat;
+  background-image: url(../img/spritesheet.png);
+}
+
+.website-by:active:after {
+	content: "";
+	display: inline-block;
+	width: 113px;
+  height: 39px;
+  background-position: -20px -178px;
+  background-repeat: no-repeat;
+  background-image: url(../img/spritesheet.png);
+}
+
 /* P.S. Не говногод, а собственный стиль */
