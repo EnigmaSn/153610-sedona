@@ -58,6 +58,10 @@ body {
 
 /* конец иконочного шрифта */
 
+a {
+	text-decoration: none;
+}
+
 h2 {
 	font-size: 16px;
 	line-height: 21px;
@@ -82,110 +86,31 @@ h3 {
 	padding-bottom: 15px;
 }
 
-/* чекбоксы */
-
-input[type="checkbox"] {
-	display: none;
+.menu a {
+	color: #000000;
 }
 
-input[type="checkbox"] + label {
-	display: block;
-	/*margin: 10px 0;*/
-	margin-bottom: 25px;
-	line-height: 20px;
-	padding-left: 40px;
-	position: relative;
-	cursor: pointer;
+.menu a:hover {
+	color: #81b3d2;
 }
 
-input[type="checkbox"] + label:before {
-	content: "\2610";
-	font-size: 26px;
-	font-family: "symbols-sedona";
-
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	width: 15px;
-	height: 15px;
+.menu a:active {
+	color: #000000;
+	opacity: 0.3;
 }
 
-input[type="checkbox"]:checked + label:before {
-	content: "\2611";
-	font-size: 26px;
-	font-family: "symbols-sedona";
-
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	width: 15px;
-	height: 15px;
-}
-/* конец чекбоксов */
-
-.form-search-big {
-	padding-top: 15px;
-	padding-bottom: 10px;
+/* не реагирует. почему? */
+.menu-active a {
+	color: #766357;
 }
 
-.form-search-big h2 {
-	font-size: 16px;
-	line-height: 21px;
-	font-weight: bold;
-	color: #ffffff;
-	margin-bottom: 25px;
+.menu-active a:hover {
+	color: #604e43;
 }
 
-.form-search-big label {
-	font-size: 14px;
-	line-height: 21px;
-	color: #ffffff;
-}
-
-.found-n h3 {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-}
-
-.sort h4 {
-	font-size: 12px;
-	line-height: 18px;
-}
-
-.card h1 {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-}
-
-.hause-item span {
-	font-size: 14px;
-	line-height: 21px;
-	color: #333333;
-}
-
-.book-but a {
-	text-align: center;
-	font-size: 14px;
-	line-height: 21px;
-	color: #ffffff;
-}
-
-.more-but a {
-	text-align: center;
-	font-size: 14px;
-	line-height: 21px;
-	color: #ffffff;
-}
-
-.rating span {
-	text-align: center;
-	font-size: 14px;
-	line-height: 21px;
-	color: #666666;
+.menu-active a:active {
+	color: #766357;
+	opacity: 0.3;
 }
 
 /* Сетка */
@@ -491,7 +416,15 @@ li {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
+}
 
+.form-search-hotels input {
+	font-size: 14px;
+	line-height: 32px;
+	font-weight: bold;
+	vertical-align: center;
+	text-transform: uppercase;
+	
 }
 
 .search-open label {
@@ -502,9 +435,21 @@ li {
 	/*padding-left: 15px;*/
 	/*margin-left: 10px;*/
 	background-color: #f2f2f2;
-	width: 345px;
+	width: 335px;
 	position: relative;
 	height: 32px;	
+	padding-left: 10px;
+	border: 2px solid #f2f2f2;
+}
+
+.date-in input:hover {
+	border: 2px solid #ebebeb;
+	background-color: #ebebeb;
+}
+
+.date-in input:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5; 
 }
 
 .date-in label {
@@ -516,8 +461,20 @@ li {
 	/*padding-left: 15px;*/
 	/*margin-left: 10px;*/
 	background-color: #f2f2f2;
-	width: 344px;
+	width: 334px;
 	height: 32px;
+	padding-left: 10px;
+	border: 2px solid #f2f2f2;
+}
+
+.date-out input:hover {
+	border: 2px solid #ebebeb;
+	background-color: #ebebeb;
+}
+
+.date-out input:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5; 
 }
 
 .date-in {
@@ -557,8 +514,20 @@ li {
 	/*padding-left: 15px;*/
 	/*margin-left: 15px;*/
 	background-color: #f2f2f2;
-	
+	padding-left: 0;
+	text-align: center;
 	height: 32px;
+	border: 2px solid #f2f2f2;
+}
+
+.peoples input:hover {
+	border: 2px solid #ebebeb;
+	background-color: #ebebeb;
+}
+
+.peoples input:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5; 
 }
 
 .children label {
@@ -579,12 +548,23 @@ li {
 }
 
 .find {
-	padding: 15px 197px;
+	padding: 15px 190px;
 	margin-top: 55px;
 	margin-bottom: 55px;
 	box-shadow: none; /* ???? */
+  border: 2px solid #81b3d2 ;
 }
 
+.find:hover {
+	background-color: #669ec0;
+	border: 2px solid #669ec0;
+}
+
+.find:active {
+	background-color: #5496bd;
+	border: 2px solid #5496bd;
+	color: #94b9d2;
+}
 
 /* иконки формы*/
 
@@ -609,12 +589,28 @@ li {
 /* Отели */
 /* Форма */
 
+/*синяя форма*/
 .form-search-big {
 	background-image: url(../img/sedona-bgrd.jpg);
 	display: flex;
 	justify-content: space-around;
 	color: #ffffff; 
-	/* почему на заголовки не действует?*/
+	padding-top: 15px;
+	padding-bottom: 9px;
+}
+
+.form-search-big h2 {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #ffffff;
+	margin-bottom: 25px;
+}
+
+.form-search-big label {
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
 }
 
 .infrastructure {
@@ -634,6 +630,7 @@ li {
 	display: flex;
 	flex-direction: column;
 	width: 264px;
+
 }
 
 .cost {
@@ -645,13 +642,58 @@ li {
 	padding-right: 72px;
 }
 
+/* чекбоксы */
 
+input[type="checkbox"] {
+	display: none;
+}
 
+input[type="checkbox"] + label {
+	display: block;
+	/*margin: 10px 0;*/
+	margin-bottom: 25px;
+	line-height: 20px;
+	padding-left: 40px;
+	position: relative;
+	cursor: pointer;
+}
 
+input[type="checkbox"] + label:before {
+	content: "\2610";
+	font-size: 26px;
+	font-family: "symbols-sedona";
 
+	position: absolute;
+	top: 0;
+	left: 0;
 
+	width: 15px;
+	height: 15px;
+}
+
+input[type="checkbox"]:checked + label:before {
+	content: "\2611";
+	font-size: 26px;
+	font-family: "symbols-sedona";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 15px;
+	height: 15px;
+}
+/* конец чекбоксов */
+
+.cost-but {
+	border: 2px solid #ffffff;
+	background-color: transparent;
+}
+
+/* конец синей формы */
 
 /* Результаты */
+
 .results-sort {
 	background-color: #fefefe;
 	display: flex;
@@ -665,10 +707,22 @@ li {
 	padding-left: 72px;
 }
 
+.found-n h3 {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
 .sort {
 	display: flex;
 	flex-direction: row;
 	width: 781px;
+}
+
+.sort h4 {
+	font-size: 12px;
+	line-height: 18px;
 }
 
 .sort-types {
@@ -725,6 +779,7 @@ li {
 	background-color: #669ec0;
 }
 */
+
 /* 
 input[type="checkbox"]:checked + label:before {
 	content: "\2611";
@@ -736,13 +791,18 @@ input[type="checkbox"]:checked + label:before {
 	left: 0;
 
 	width: 15px;
-	height: 15px;*/
-
-
+	height: 15px;
+*/
 
 .cards {
 	display: flex;
 	flex-direction: column;
+}
+
+.card h1 {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
 }
 
 .card {
@@ -759,10 +819,11 @@ input[type="checkbox"]:checked + label:before {
 	border-bottom: 1px solid #e5e5e5
 }
 
-/* не выравнивается по высоте. почему?*/
 .hause-image {
 	margin-right: 20px;
 	width: 165px;
+	padding-top: 30px;
+	padding-bottom: 21px;
 }
 
 .hause-item {
@@ -770,6 +831,12 @@ input[type="checkbox"]:checked + label:before {
 	flex-direction: row;
 	width: 781px;
 	flex-wrap: wrap;
+}
+
+.hause-item span {
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
 }
 
 .hause-name {
@@ -782,10 +849,24 @@ input[type="checkbox"]:checked + label:before {
 	width: 110px;
 }
 
+.more-but a {
+	text-align: center;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
 .book-but {
 	display: flex;
 	flex-direction: column;
 	width: 142px;
+}
+
+.book-but a {
+	text-align: center;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
 }
 
 .more {
@@ -811,9 +892,13 @@ input[type="checkbox"]:checked + label:before {
 	text-align: center;
 }
 
-a {
-	text-decoration: none;
+.rating span {
+	text-align: center;
+	font-size: 14px;
+	line-height: 21px;
+	color: #666666;
 }
+
 
 /* Футер */
 
@@ -845,6 +930,7 @@ a {
 	line-height: 26px;
 	font-weight: bold;
 	/*margin-left: 40px;*/
+	color: #000000;
 }
 
 .social-buttons {
@@ -884,6 +970,7 @@ a {
 .made-by a {
 	font-size: 14px;
 	line-height: 26px;
+	color: #000000;
 	
 }
 
