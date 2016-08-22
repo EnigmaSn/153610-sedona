@@ -462,7 +462,7 @@ li {
 	height: 32px;
 	padding-left: 10px;
 	border: 2px solid #f2f2f2;
-	position: relative;
+	
 }
 
 .date-out input:hover {
@@ -487,6 +487,7 @@ li {
 	display: flex;
 	flex-direction: row;
 	padding-top: 30px;
+	position: relative;
 }
 
 .icon-calendar {
