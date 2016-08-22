@@ -436,6 +436,7 @@ li {
 	height: 32px;	
 	padding-left: 10px;
 	border: 2px solid #f2f2f2;
+	/*position: relative;*/
 }
 
 .date-in input:hover {
@@ -462,7 +463,7 @@ li {
 	height: 32px;
 	padding-left: 10px;
 	border: 2px solid #f2f2f2;
-	
+	/*position: relative;*/
 }
 
 .date-out input:hover {
@@ -480,6 +481,7 @@ li {
 	display: flex;
 	flex-direction: row;
 	padding-top: 54px;
+	background-color: #eeeeee;
 	position: relative;
 }
 
@@ -487,16 +489,35 @@ li {
 	display: flex;
 	flex-direction: row;
 	padding-top: 30px;
+	background-color: #333333;
 	position: relative;
 }
 
 .icon-calendar {
 	position: absolute;
-	right: 7px;
-	top: 58px;
+	right: 8px;
+	bottom: 8px;
 	font-size: 21px;
 	line-height: 26px; 
 	color: #c2c2c2;
+}
+
+.icon-calendar:hover {
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	font-size: 21px;
+	line-height: 26px; 
+	color: #000000;
+}
+
+.icon-calendar:active {
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	font-size: 21px;
+	line-height: 26px; 
+	color: #81b3d2;
 }
 
 .date-out label {
@@ -528,6 +549,20 @@ li {
 	border: none;
 	background-color: #f2f2f2;
 	color: #a9a9a9;
+	outline:none;
+}
+
+.peoples button:hover {
+	border: none;
+	background-color: #f2f2f2;
+	color: #000000;
+	outline:none;
+}
+
+.peoples button:active {
+	border: none;
+	background-color: #f2f2f2;
+	color: #81b3d2;
 	outline:none;
 }
 
