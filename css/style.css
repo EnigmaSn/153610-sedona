@@ -175,8 +175,8 @@ li {
 	width: 100%;
 	padding-left: auto;
 	padding-right: auto;
-	padding-bottom: 36px;
-	padding-top: 40px;
+	padding-bottom: 38px;
+	padding-top: 44px;
 	margin: auto;
 	text-align: center; 
 }
@@ -189,6 +189,7 @@ li {
 	width: 500px;
 	padding-left: 350px;
 	padding-right: 350px;
+	margin-bottom: 10px;
 }
 
 .features-head p {
@@ -198,6 +199,18 @@ li {
 }
 .features {
 	width: 100%;
+}
+
+.features-item {
+	width: 400px;
+	padding: 0;
+}
+
+.features-item h2 {
+	width: 240px;
+	display: block;
+	padding-left: 88px;
+	padding-right: 88px;
 }
 
 .features-blue {
@@ -215,6 +228,8 @@ li {
 	line-height: 21px;
 	font-weight: bold;
 	color: #ffffff;
+	margin-top: 15px;
+	margin-bottom: 20px;
 }
 
 .features-blue p {
@@ -223,13 +238,15 @@ li {
 	color: #ffffff;
 	padding-left: 30px;
 	padding-right: 30px;
+	margin-top: 20px;
 }
 
 .promo h2 {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
-	padding-top: 15px;
+	/*padding-top: 10px;*/
+	margin-bottom: 25px;
 }
 
 .promo-item-hause h2:before {
@@ -240,7 +257,7 @@ li {
   background-repeat: no-repeat;
   background-image: url(../img/spritesheet.png);
   background-position: -20px -483px;
-  margin: 30px auto;
+  margin: 25px auto;
 }
 
 .promo-item-food h2:before {
@@ -251,7 +268,7 @@ li {
   background-position: -20px -257px;
   background-repeat: no-repeat;
   background-image: url(../img/spritesheet.png);
-  margin: 30px auto;
+  margin: 25px auto;
 }
 
 .promo-item-gifts h2:before {
@@ -262,7 +279,7 @@ li {
   background-position: -20px -367px;
   background-repeat: no-repeat;
   background-image: url(../img/spritesheet.png);
-  margin: 30px auto;
+  margin: 25px auto;
 }
 
 .promo p {
@@ -284,21 +301,7 @@ li {
 
 .promo-item {
 	flex-basis: 400px;
-}
-
-.features-gray h2 {
-	font-size: 21px;
-	line-height: 21px;
-	font-weight: bold;
-	padding-top: 30px;
-	/*padding-left: 500px;
-	padding-right: 500px;*/
-}
-
-.features-gray p {
-	font-size: 14px;
-	line-height: 21px;
-	color: #333333;
+	padding-top: 35px;
 }
 
 .features-image {
@@ -311,19 +314,6 @@ li {
 	height: auto;
 }
 
-.features-item {
-	width: 400px;
-	padding: 0;
-}
-
-.features-item h2 {
-	width: 240px;
-	display: block;
-	padding-left: 88px;
-	padding-right: 88px;
-}
-
-
 .features-gray {
 	background-color: #eeeeee;
 	display: flex;
@@ -331,11 +321,23 @@ li {
 	text-align: center;
 
 }
+.features-gray h2 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	padding-top: 30px;
+	padding-bottom: 5px;
+}
 
-.features-item-gray p {
+.features-gray p {
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+
 	padding-left: 45px;
 	padding-right: 45px;
-	padding-bottom: 55px;
+	padding-top: 5px;
+	padding-bottom: 45px;
 }
 
 /* Поиск */
