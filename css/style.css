@@ -360,8 +360,8 @@ li {
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: bold;
-	padding-top: 30px;
-	padding-bottom: 10px;
+	padding-top: 27px;
+	padding-bottom: 15px;
 	margin-bottom: 0px;
 }
 
@@ -369,7 +369,7 @@ li {
 	font-size: 14px;
 	line-height: 24px;
 	color: #333333;
-	padding-bottom: 35px;
+	padding-bottom: 33px;
 }
 
 .search a {
@@ -385,7 +385,6 @@ li {
 	font-weight: bold;
 }
 
-/* как прописать для одной кнопки?*/
 .search-hotels .find {
 	font-size: 21px;
 	line-height: 26px;
@@ -397,14 +396,13 @@ li {
 .search-but {
 	color: #ffffff;
 	background-color: #766357;
-	width: 569px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	width: 568px;
+	padding-top: 29px;
+	padding-bottom: 29px;
 }
 
 .search-open {
 	background-image: url(../img/map.jpg);
-	/*position: relative;*/
 	height: 595px;
 }
 
@@ -430,15 +428,29 @@ li {
 
 .search-open label {
 	margin-right: 20px;
+	padding-top: 4px;
+}
+
+.date-in {
+	display: flex;
+	flex-direction: row;
+	padding-top: 55px;
+	
+	position: relative;
+}
+
+.date-in label {
+	margin-right: 17px;
+	line-height: 32px;
 }
 
 .date-in input {
 	background-color: #f2f2f2;
-	width: 335px;
+	width: 332px;
 	height: 32px;	
-	padding-left: 10px;
 	border: 2px solid #f2f2f2;
-	/*position: relative;*/
+
+	padding-left: 10px;
 }
 
 .date-in input:hover {
@@ -452,20 +464,25 @@ li {
 	outline:none;
 }
 
-.date-in label {
-	margin-right: 16px;
+.date-out {
+	display: flex;
+	flex-direction: row;
+	margin-top: -1px;
+	padding-top: 30px;
+	position: relative;
+}
+
+.date-out label {
+	margin-right: 12px;
 	line-height: 32px;
 }
 
 .date-out input {
-	/*padding-left: 15px;*/
-	/*margin-left: 10px;*/
 	background-color: #f2f2f2;
-	width: 334px;
+	width: 332px;
 	height: 32px;
 	padding-left: 10px;
 	border: 2px solid #f2f2f2;
-	/*position: relative;*/
 }
 
 .date-out input:hover {
@@ -479,26 +496,10 @@ li {
 	outline:none;
 }
 
-.date-in {
-	display: flex;
-	flex-direction: row;
-	padding-top: 54px;
-	background-color: #eeeeee;
-	position: relative;
-}
-
-.date-out {
-	display: flex;
-	flex-direction: row;
-	padding-top: 30px;
-	background-color: #333333;
-	position: relative;
-}
-
 .icon-calendar {
 	position: absolute;
-	right: 8px;
-	bottom: 8px;
+	right: 6px;
+	bottom: 6px;
 	font-size: 21px;
 	line-height: 26px; 
 	color: #c2c2c2;
@@ -520,11 +521,6 @@ li {
 	font-size: 21px;
 	line-height: 26px; 
 	color: #81b3d2;
-}
-
-.date-out label {
-	margin-right: 10px;
-	line-height: 32px;
 }
 
 .peoples {
@@ -554,6 +550,22 @@ li {
 	outline:none;
 }
 
+.adults .icon-minus {
+	padding-left: 10px;
+}
+
+.adults .icon-plus {
+	padding-right: 10px;
+}
+
+.children .icon-minus {
+	padding-left: 10px;
+}
+
+.children .icon-plus {
+	padding-right: 9px;
+}
+
 .peoples button:hover {
 	border: none;
 	background-color: #f2f2f2;
@@ -569,8 +581,6 @@ li {
 }
 
 .peoples input {
-	/*padding-left: 15px;*/
-	/*margin-left: 15px;*/
 	background-color: #f2f2f2;
 	padding-left: 0;
 	text-align: center;
@@ -589,27 +599,28 @@ li {
 	outline:none;
 }
 
+.adults label {
+	margin-right: 32px;
+	line-height: 32px;
+}
+
+.adults input {
+	width: 39px;
+	border: 2px solid transparent ;
+}
+
 .children label {
 	line-height: 32px;
+	margin-right: 27px;
 }
 
 .children input {
 	width: 40px;
 }
 
-.adults label {
-	margin-right: 27px;
-	line-height: 32px;
-}
-
-.adults input {
-	width: 40px;
-	border: 2px solid transparent ;
-}
-
 .find {
-	padding: 15px 190px;
-	margin-top: 55px;
+	padding: 14px 190px;
+	margin-top: 54px;
 	margin-bottom: 55px;
   border: 2px solid #81b3d2 ;
 }
@@ -625,28 +636,7 @@ li {
 	color: #94b9d2;
 }
 
-/* иконки формы*/
-
-/* .promo-item-hause h2:before {
-	content: "";
-	display: block;
-	width: 75px;
-  height: 76px;
-  background-repeat: no-repeat;
-  background-image: url(../img/spritesheet.png);
-  background-position: -20px -325px;
-  margin: 30px auto;
-}
-*/
-
-
-
-/* конец иконок формы*/
-
-
-
 /* Отели */
-/* Форма */
 
 /*синяя форма*/
 .form-search-big {
@@ -995,6 +985,7 @@ input[type="checkbox"]:checked + label:before {
 .social-buttons {
 	/*margin-left: 50px;*/
 	width: 400px;
+	
 	text-align: center;
 }
 
@@ -1017,9 +1008,8 @@ input[type="checkbox"]:checked + label:before {
 
 .social-btn:active {
 	background-color: #5496bd;
-	/*opacity: 0.3;*/
-	color: #88b6d1;
-}  /*внезапно перестал работать */
+	color: rgba(255,255,255,0.3);
+}  
 
 .social-btn span {
 	font-size: 19px;
@@ -1060,7 +1050,6 @@ input[type="checkbox"]:checked + label:before {
   background-position: -20px -99px;
   background-repeat: no-repeat;
   background-image: url(../img/spritesheet.png);
-	
 }
 
 .website-by:active:after {
