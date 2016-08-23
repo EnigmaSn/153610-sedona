@@ -507,8 +507,8 @@ li {
 
 .icon-calendar:hover {
 	position: absolute;
-	right: 8px;
-	bottom: 8px;
+	right: 6px;
+	bottom: 6px;
 	font-size: 21px;
 	line-height: 26px; 
 	color: #000000;
@@ -516,8 +516,8 @@ li {
 
 .icon-calendar:active {
 	position: absolute;
-	right: 8px;
-	bottom: 8px;
+	right: 6px;
+	bottom: 6px;
 	font-size: 21px;
 	line-height: 26px; 
 	color: #81b3d2;
@@ -642,8 +642,9 @@ li {
 .form-search-big {
 	background-image: url(../img/sedona-bgrd.jpg);
 	display: flex;
-	justify-content: space-around;
+	/*justify-content: space-around;*/
 	color: #ffffff; 
+
 	padding-top: 15px;
 	padding-bottom: 9px;
 }
@@ -653,6 +654,7 @@ li {
 	line-height: 21px;
 	font-weight: bold;
 	color: #ffffff;
+
 	margin-bottom: 25px;
 }
 
@@ -666,7 +668,8 @@ li {
 	color: #ffffff; 
 	display: flex;
 	flex-direction: column;
-	width: 252px;
+
+	width: 254px;
 	padding-left: 72px;
 }
 
@@ -678,17 +681,7 @@ li {
 .type-hause {
 	display: flex;
 	flex-direction: column;
-	width: 264px;
-
-}
-
-.cost {
-	display: flex;
-	flex-direction: column;
-	/*width: 528px;*/
-	width: 328px;
-	margin-left: 200px;
-	padding-right: 72px;
+	width: 474px;
 }
 
 /* чекбоксы */
@@ -734,9 +727,157 @@ input[type="checkbox"]:checked + label:before {
 }
 /* конец чекбоксов */
 
-.cost-but {
-	border: 2px solid #ffffff;
-	background-color: transparent;
+/* Подкустовый блок с ценой */
+/*
+.cost {
+	display: flex;
+	flex-direction: column;
+	width: 328px;
+	margin-left: 200px;
+	padding-right: 72px;
+}
+*/
+
+.filter-range {
+  width: 330px;
+  color: #ffffff;
+  text-transform: uppercase;
+	padding-top: 11px;
+	
+}
+
+.filter-range-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.price-controls {
+  height: 33px;
+  margin-bottom: 20px;
+	font-size: 0; /* убирает пробел между блочно-строчными */
+  /* но пробел ведь остался... */
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  position: relative;
+
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 33px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+
+}
+
+.price-controls input {
+  width: 50px;
+  height: 33px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+  outline: none;
+
+  padding-bottom: 15px;
+	/*line-height:1*/
+  
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+/* основная шкала */
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* дополнительная (внутри) */
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+	
+	position: absolute;
+  top: -9px;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 31px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
 
 /* конец синей формы */
