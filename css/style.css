@@ -404,6 +404,7 @@ li {
 .search-open {
 	background-image: url(../img/map.jpg);
 	height: 595px;
+	position: relative;
 }
 
 .form-search-hotels {
@@ -728,15 +729,6 @@ input[type="checkbox"]:checked + label:before {
 /* конец чекбоксов */
 
 /* Подкустовый блок с ценой */
-/*
-.cost {
-	display: flex;
-	flex-direction: column;
-	width: 328px;
-	margin-left: 200px;
-	padding-right: 72px;
-}
-*/
 
 .filter-range {
   width: 330px;
@@ -893,15 +885,16 @@ input[type="checkbox"]:checked + label:before {
 
 .found-n {
 	width: 165px;
-	margin-right:20px;
+	/*margin-right:30px;*/
 	padding-left: 72px;
+	background-color: #eee;
+	padding-top: 10px;
 }
 
 .found-n h3 {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	padding-top: 10px;
 }
 
 .sort {
@@ -913,6 +906,7 @@ input[type="checkbox"]:checked + label:before {
 .sort h4 {
 	font-size: 12px;
 	line-height: 18px;
+	padding-bottom: 20px;
 }
 
 .sort-types {
@@ -921,6 +915,7 @@ input[type="checkbox"]:checked + label:before {
 	justify-content: center;
 }
 
+/* кто косячит тот я....почему их два*/
 .sort-dir {
 	display: flex;
 	flex-direction: row;
@@ -1092,15 +1087,6 @@ input[type="checkbox"]:checked + label:before {
 
 /* Футер */
 
-.main-footer {
-	width: 1200px;
-	background: rgba(255,255,255, 0,9);
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-}
-
 .footer {
 	width: 1200px;
 	background-color: #ffffff;
@@ -1108,6 +1094,18 @@ input[type="checkbox"]:checked + label:before {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+}
+
+.main-footer {
+	width: 1200px;
+	background-color: rgba(255,255,255, 0,9);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+	position: absolute;
+	margin-top: -120px;
 }
 
 .visitsedona {
