@@ -156,6 +156,7 @@ li {
 }
 
 .intro-images {
+	background-color: #92c7e4;
 	background-image: url("../img/sedona-1.jpg");
 	background-position: 50% 21% ;
 	display: flex;
@@ -727,7 +728,7 @@ input[type="checkbox"] + label:hover:before {
 	height: 15px;
 }
 
-input[type="checkbox"] + label:disabled:before {
+input[type="checkbox"]:disabled + label:before {
 	content: "\2610";
 	font-size: 26px;
 	font-family: "symbols-sedona";
@@ -769,7 +770,7 @@ input[type="checkbox"]:checked + label:hover:before {
 	height: 15px;
 }
 
-input[type="checkbox"]:checked + label:disabled:before {
+input[type="checkbox"]:disabled:checked + label:before {
 	content: "\2611";
 	font-size: 26px;
 	font-family: "symbols-sedona";
@@ -1047,11 +1048,32 @@ input[type="checkbox"]:checked + label:disabled:before {
 	/*margin-right: 2px;*/
 }
 
-.sort-dir a {
+.sort-direction a {
 	font-size: 23px;
 	/*line-height: 20px;*/
 	text-align: center;
 	font-family: "symbols-sedona";
+	color: #cccccc;
+}
+
+.sort-direction a:hover {
+	color: #000000;
+}
+
+.sort-direction a:active {
+	color: #81b3d2;
+}
+
+.sort-direction .active {
+	color: #81b3d2;
+}
+
+.sort-direction .active:hover {
+	color: #81b3d2;
+}
+
+.sort-direction .active:active {
+	color: #81b3d2;
 }
 
 .icon-up-dir {
@@ -1089,8 +1111,6 @@ input[type="checkbox"]:checked + label:disabled:before {
 	width: 165px;
 	padding-top: 30px;
 	padding-bottom: 21px;
-
-	background-color: #333333;
 }
 
 .hause-item {
@@ -1098,8 +1118,6 @@ input[type="checkbox"]:checked + label:disabled:before {
 	flex-direction: row;
 	width: 781px;
 	flex-wrap: wrap;
-
-	background-color: #eeeeee;
 
 	margin-left: -19px;
 	margin-top: -5px;
