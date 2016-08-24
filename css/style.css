@@ -1110,7 +1110,7 @@ input[type="checkbox"]:disabled:checked + label:before {
 	margin-right: 20px;
 	width: 165px;
 	padding-top: 30px;
-	padding-bottom: 21px;
+	padding-bottom: 22px;
 }
 
 .hause-item {
@@ -1129,7 +1129,7 @@ input[type="checkbox"]:disabled:checked + label:before {
 	line-height: 21px;
 	color: #333333;
 	
-	margin-bottom: 15px;
+	margin-bottom: 16px;
 }
 
 .hause-name {
@@ -1142,7 +1142,6 @@ input[type="checkbox"]:disabled:checked + label:before {
 	display: flex;
 	flex-direction: column;
 	width: 110px;
-
 	margin-right: 5px;
 }
 
@@ -1161,7 +1160,7 @@ input[type="checkbox"]:disabled:checked + label:before {
 .book-but {
 	display: flex;
 	flex-direction: column;
-	width: 142px;
+	width: 144px;
 }
 
 .book-but a {
@@ -1219,7 +1218,6 @@ input[type="checkbox"]:disabled:checked + label:before {
 	font-size: 14px;
 	line-height: 21px;
 	color: #666666;
-	
 }
 
 /* Футер */
@@ -1231,6 +1229,7 @@ input[type="checkbox"]:disabled:checked + label:before {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	height: 120px;
 }
 
 .main-footer {
@@ -1262,7 +1261,7 @@ input[type="checkbox"]:disabled:checked + label:before {
 .social-buttons {
 	/*margin-left: 50px;*/
 	width: 400px;
-	
+	margin-left: 10px;
 	text-align: center;
 }
 
@@ -1304,6 +1303,7 @@ input[type="checkbox"]:disabled:checked + label:before {
 	vertical-align: top;
 	width: 400px;
 	text-align: center;
+	margin-right: 8px;
 }
 
 .website-by:after {
