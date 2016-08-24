@@ -163,6 +163,14 @@ li {
 	margin-right:240px;
 }
 
+.menu li:nth-child(6){
+	margin-right:240px;
+}
+
+.menu li:nth-child(10){
+	margin-right:240px;
+}
+
 .intro-images {
 	background-color: #92c7e4;
 	background-image: url("../img/sedona-1.jpg");
@@ -437,9 +445,9 @@ li {
 	transform: translateX(-50%);
 
 	box-shadow:
-		0 5px 50px -10px #a6a6a6,
-		5px 0 50px -10px #a6a6a6,
-		-5px 0 50px -10px #a6a6a6;
+		0 15px 30px -15px #a6a6a6,
+		15px 0 30px -15px #a6a6a6,
+		-15px 0 30px -15px #a6a6a6;
 }
 
 .form-search-hotels input {
