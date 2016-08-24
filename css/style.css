@@ -1201,6 +1201,13 @@ input[type="checkbox"]:disabled:checked + label:before {
 	vertical-align: middle;
 	font-size: 20px;
 	color: #81b3d2;
+
+	vertical-align: top;
+	text-align: right;
+
+	margin-top: -7px;  /* третья строка со звездами выше */
+	padding-bottom: 45px;
+	margin-right: -6px;
 }
 
 .icon-star {
@@ -1214,6 +1221,7 @@ input[type="checkbox"]:disabled:checked + label:before {
 }
 
 .rating span {
+	vertical-align: middle;
 	text-align: center;
 	font-size: 14px;
 	line-height: 21px;
