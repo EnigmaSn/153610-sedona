@@ -409,17 +409,26 @@ li {
 	font-weight: bold;
 }
 
-.search-hotels label {
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: bold;
-}
 
 .search-hotels {
 	position: absolute;
 	top: 0;
 	left: 50%;
 	/*margin-left: -50% шириныформы;*/
+}
+
+.search-hotels {
+	display:none;
+}
+
+.search-hotels-show {
+	display:block;
+}
+
+.search-hotels label {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
 }
 
 .search-hotels .find {
@@ -1116,7 +1125,8 @@ input[type="checkbox"]:disabled:checked + label:before {
 
 .icon-up-dir {
 	margin-right: -8px;
-	padding-left: 75px;
+	margin-left: 75px;
+	/*padding-left: 75px;*/
 }
 
 .cards {
