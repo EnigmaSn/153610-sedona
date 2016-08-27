@@ -489,16 +489,24 @@ li {
 	padding-top: 55px;
 	
 	position: relative;
+	width: 460px;
+
+	/*background-color: #ccc;*/
+	box-sizing: border-box;
+	flex-wrap: nowrap;
+	white-space: nowrap;
 }
 
 .date-in label {
-	margin-right: 29px;
+	margin-right: 26px;
+	margin-left: 3px;
+
 	line-height: 32px;
 }
 
 .date-in input {
 	background-color: #f2f2f2;
-	width: 328px;
+	width: 328px; /* 328 na 340*/
 	height: 32px;	
 	border: 2px solid #f2f2f2;
 
@@ -522,11 +530,17 @@ li {
 	margin-top: -1px;
 	padding-top: 30px;
 	position: relative;
+
+	width: 460px;
+	box-sizing: border-box;
+	flex-wrap: nowrap;
+	white-space: nowrap;
 }
 
 .date-out label {
-	margin-right: 26px;
+	margin-right: 25px;
 	line-height: 32px;
+	margin-left: 2px;
 }
 
 .date-out input {
@@ -590,6 +604,9 @@ li {
 	box-sizing: border-box;
 
 	background-color: red;
+
+	flex-wrap: nowrap;
+	white-space: nowrap;
 }
 
 .children {
@@ -602,6 +619,9 @@ li {
 	box-sizing: border-box;
 
 	background-color: red;
+
+	flex-wrap: nowrap;
+	white-space: nowrap;
 }
 
 .peoples button {
@@ -744,9 +764,14 @@ li {
 	padding-left: 72px;
 }
 
-.form-column{
+.form-column {
 	display: flex;
 	align-self: baseline;
+}
+
+.form-column label {
+	max-width: 200px;
+	white-space: pre-wrap;
 }
 
 .type-hause {
@@ -811,7 +836,6 @@ input[type="checkbox"]:disabled + label:before {
 
 	color: #6a6a6a;
 }
-
 
 input[type="checkbox"]:checked + label:before {
 	content: "\2611";
@@ -1216,7 +1240,7 @@ input[type="checkbox"]:disabled:checked + label:before {
 .more-but {
 	display: flex;
 	flex-direction: column;
-	width: 110px;
+	min-width: 110px;
 	margin-right: 5px;
 }
 
@@ -1235,7 +1259,7 @@ input[type="checkbox"]:disabled:checked + label:before {
 .book-but {
 	display: flex;
 	flex-direction: column;
-	width: 144px;
+	min-width: 144px;
 }
 
 .book-but a {
@@ -1333,7 +1357,7 @@ input[type="checkbox"]:disabled:checked + label:before {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	height: 120px;
+	height: 123px;
 }
 
 .main-footer {
