@@ -444,6 +444,8 @@ li {
 	top: 0;
 	left: 50%;
 	display: none;
+
+	margin-bottom: 50px;
 }
 
 .search-hotels-show {
@@ -504,10 +506,10 @@ li {
 
 	/*background-color: #ccc;*/
 	box-sizing: border-box;
-	flex-wrap: nowrap;
-	white-space: nowrap;
+	/*flex-wrap: nowrap;
+	white-space: nowrap;*/
 
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .date-in label {
@@ -547,8 +549,8 @@ li {
 
 	width: 460px;
 	box-sizing: border-box;
-	flex-wrap: nowrap;
-	white-space: nowrap;
+	/*flex-wrap: nowrap;
+	white-space: nowrap;*/
 
 	/*background-color: green;*/
 }
@@ -618,31 +620,34 @@ li {
 .adults {
 	display: flex;
 	flex-direction: row;
-	/*width: 230px;*/
+	width: 230px;
 
 	box-sizing: border-box;
 
 	/*background-color: red;*/
 
-	flex-wrap: nowrap;
-	white-space: nowrap;
+	/*flex-wrap: nowrap;
+	white-space: nowrap;*/
 
 	/*margin-right: 55px*/
+
+	white-space: pre-line;
 }
 
 .children {
 	display: flex;
 	flex-direction: row;
-	/*width: 177px;*/
+	width: 177px;
 	/*padding-left: 53px;*/
 	/*margin-left: 55px;*/
 
 	box-sizing: border-box;
+	white-space: pre-line;
 
 	/*background-color: red;*/
 
-	flex-wrap: nowrap;
-	white-space: nowrap;
+	/*flex-wrap: nowrap;
+	white-space: nowrap;*/
 }
 
 .peoples button {
