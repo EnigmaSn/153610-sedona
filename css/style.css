@@ -453,6 +453,35 @@ li {
 	position: relative;
 }
 
+/*@keyframes search-open-move {
+	from { 
+		transform: translateX(-300px);
+	}
+	50% {
+		transform: translateX(300px);
+	}
+	to {
+		transform: translateX(0px);
+	}
+}*/
+
+@keyframes search-open-move {
+	from { 
+		transform: scale(0.1,0.1);
+	}
+	50% {
+		transform: scale(1.1,1.1);
+	}
+	to {
+		transform: scale(1,1);
+	}
+}
+
+.search-hotels {
+	animation-name: search-open-move;
+	animation-duration: 0.9s;
+}
+
 .form-search-hotels {
 	display: flex;
 	flex-direction: column;
