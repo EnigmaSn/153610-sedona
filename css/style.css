@@ -693,7 +693,13 @@ li {
 	padding-left: 0;
 	text-align: center;
 	height: 38px;
+
+	line-height: 32px;
 	border: 2px solid #f2f2f2;
+
+	width: 40px;
+	min-width: 40px;
+	max-width:40px;
 }
 
 .peoples input:hover {
