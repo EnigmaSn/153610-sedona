@@ -500,12 +500,14 @@ li {
 	padding-top: 55px;
 	
 	position: relative;
-	width: 460px;
+	max-width: 460px;
 
 	/*background-color: #ccc;*/
 	box-sizing: border-box;
 	flex-wrap: nowrap;
 	white-space: nowrap;
+
+	overflow: hidden;
 }
 
 .date-in label {
