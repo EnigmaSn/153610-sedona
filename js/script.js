@@ -11,3 +11,7 @@ button.addEventListener("click", function(event) {
         popup.classList.add("search-hotels-show");
     }
 });
+
+// Анимация
+
+popup.addEventListener("click", function(event))

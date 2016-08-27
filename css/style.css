@@ -499,12 +499,13 @@ li {
 .date-in {
 	display: flex;
 	flex-direction: row;
-	padding-top: 55px;
+	/*padding-top: 55px;*/
+	margin-top: 55px;
 	
 	position: relative;
 	max-width: 460px;
 
-	/*background-color: #ccc;*/
+	background-color: #ccc;
 	box-sizing: border-box;
 	/*flex-wrap: nowrap;
 	white-space: nowrap;*/
@@ -543,11 +544,13 @@ li {
 .date-out {
 	display: flex;
 	flex-direction: row;
-	margin-top: -1px;
-	padding-top: 30px;
+	/*margin-top: -1px;*/
+	/*padding-top: 30px;*/
+	margin-top: 29px;
 	position: relative;
 
 	width: 460px;
+
 	box-sizing: border-box;
 	/*flex-wrap: nowrap;
 	white-space: nowrap;*/
@@ -560,14 +563,18 @@ li {
 	padding-right: 6px;
 	line-height: 32px;
 	/*margin-left: 2px;*/
+
+	max-width: 111px; 
 }
 
 .date-out input {
 	background-color: #f2f2f2;
 	width: 333px;
-	height: 33px;
+	height: 32px;
 	padding-left: 10px;
 	border: 2px solid #f2f2f2;
+
+	/*position: relative;*/
 }
 
 .date-out input:hover {
@@ -584,7 +591,8 @@ li {
 .icon-calendar {
 	position: absolute;
 	right: 6px;
-	bottom: 6px;
+	top: 6px;
+
 	font-size: 21px;
 	line-height: 26px; 
 	color: #c2c2c2;
@@ -611,7 +619,8 @@ li {
 .peoples {
 	display: flex;
 	flex-direction: row;
-	padding-top: 30px;
+	/*padding-top: 30px;*/
+	margin-top: 29px;
 	width: 460px;
 
 	box-sizing: border-box;
@@ -692,9 +701,9 @@ li {
 	background-color: #f2f2f2;
 	padding-left: 0;
 	text-align: center;
-	height: 38px;
+	height: 32px;
 
-	line-height: 32px;
+	line-height: 1;
 	border: 2px solid #f2f2f2;
 
 	width: 40px;
@@ -716,7 +725,7 @@ li {
 .adults label {
 	/*padding-left: 3px;*/
 	/*margin-right: 45px;*/
-	padding-right: 25px;
+	padding-right: 26px;
 	line-height: 32px;
 }
 
@@ -728,7 +737,7 @@ li {
 .children label {
 	line-height: 32px;
 	/*margin-right: 28px;*/
-	padding-right: 8px;
+	padding-right: 7px;
 	padding-left: 55px;
 }
 
