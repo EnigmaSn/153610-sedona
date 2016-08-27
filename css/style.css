@@ -410,20 +410,6 @@ li {
 }
 
 
-.search-hotels {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	/*margin-left: -50% шириныформы;*/
-}
-
-.search-hotels {
-	display:none;
-}
-
-.search-hotels-show {
-	display:block;
-}
 
 .search-hotels label {
 	font-size: 14px;
@@ -453,17 +439,18 @@ li {
 	position: relative;
 }
 
-/*@keyframes search-open-move {
-	from { 
-		transform: translateX(-300px);
-	}
-	50% {
-		transform: translateX(300px);
-	}
-	to {
-		transform: translateX(0px);
-	}
-}*/
+.search-hotels {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	display: none;
+}
+
+.search-hotels-show {
+	display:block;
+	animation-name: search-open-move;
+	animation-duration: 0.9s;
+}
 
 @keyframes search-open-move {
 	from { 
@@ -475,11 +462,6 @@ li {
 	to {
 		transform: scale(1,1);
 	}
-}
-
-.search-hotels {
-	animation-name: search-open-move;
-	animation-duration: 0.9s;
 }
 
 .form-search-hotels {
