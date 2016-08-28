@@ -634,9 +634,11 @@ li {
 .children {
 	display: flex;
 	flex-direction: row;
-	width: 177px;
+	/*width: 177px;*/
+	width: 230px;
+	max-width: 230px;
 	min-width: 177px;
-	max-width: 177px;
+	/*max-width: 177px;*/
 	box-sizing: border-box;
 	white-space: pre-line;
 }
@@ -647,6 +649,9 @@ li {
 	color: #a9a9a9;
 	outline:none;
 	height: 38px;
+	width: 38px;
+	min-width: 38px;
+	max-width: 38px;
 }
 
 .adults .icon-minus {
@@ -707,23 +712,25 @@ li {
 }
 
 .adults input {
-	width: 39px;
-	min-width: 39px;
-	max-width: 39px;
+	/* было 39*/
+	width: 35px;
+	min-width: 35px;
+	max-width: 35px;
 	border: 2px solid transparent ;
 }
 
 .children label {
 	line-height: 32px;
 	padding-left: 51px;
+	width: 45px;
 	min-width: 45px;
 	max-width: 45px;
 }
 
 .children input {
-	width: 40px;
-	min-width: 40px;
-	max-width: 40px;
+	width: 35px;
+	min-width: 35px;
+	max-width: 35px;
 }
 
 .find {
