@@ -404,8 +404,6 @@ li {
 	font-weight: bold;
 }
 
-
-
 .search-hotels label {
 	font-size: 14px;
 	line-height: 26px;
@@ -637,7 +635,8 @@ li {
 	display: flex;
 	flex-direction: row;
 	width: 177px;
-
+	min-width: 177px;
+	max-width: 177px;
 	box-sizing: border-box;
 	white-space: pre-line;
 }
@@ -703,6 +702,7 @@ li {
 
 .adults label {
 	min-width: 94px;
+	max-width: 94px;
 	line-height: 32px;
 }
 
@@ -717,6 +717,7 @@ li {
 	line-height: 32px;
 	padding-left: 51px;
 	min-width: 45px;
+	max-width: 45px;
 }
 
 .children input {
