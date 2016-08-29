@@ -19,7 +19,6 @@ body {
 @font-face {
   font-weight: normal;
   font-style: normal;
-
   font-family: "symbols-sedona";
   src: url("../fonts/symbols-sedona.woff") format("woff"),
        url("../fonts/symbols-sedona.woff2") format("woff2");
@@ -31,7 +30,6 @@ body {
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
-
   font-weight: normal;
   line-height: 1em;
   font-family: "symbols-sedona";
@@ -40,7 +38,6 @@ body {
   text-decoration: inherit;
   font-style: normal;
   font-variant: normal;
-
   speak: none;
 }
 
