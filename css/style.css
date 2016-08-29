@@ -92,15 +92,16 @@ h3 {
 	font-weight: bold;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	box-sizing: border-box;
 }
 
 .menu a {
 	color: #000000;
 }
 
-.menu li:nth-child(4) {
-	padding-right: 15px;
-	background-color: #eee;
+.menu li:nth-child(4n) {
+	padding-right: 72px;
+	text-align: right;
 }
 
 .menu a:hover {
