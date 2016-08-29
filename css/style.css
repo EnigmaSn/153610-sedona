@@ -1,7 +1,7 @@
 @font-face {
-font-family: "ptsans";
-src: url("../fonts/ptsans.woff2") format("woff2"),
-url("../fonts/ptsans.woff") format("woff");
+	font-family: "ptsans";
+	src: url("../fonts/ptsans.woff2") format("woff2"),
+	url("../fonts/ptsans.woff") format("woff");
 }
 
 body {
@@ -98,6 +98,11 @@ h3 {
 	color: #000000;
 }
 
+.menu li:nth-child(4) {
+	padding-right: 15px;
+	background-color: #eee;
+}
+
 .menu a:hover {
 	color: #81b3d2;
 }
@@ -121,12 +126,13 @@ h3 {
 }
 
 /* Сетка */
+
 .container {
 	width: 1200px;
 	margin: 0 auto;
 	box-shadow: 
-		5px 0 50px -10px #a6a6a6,
-		-5px 0 50px -10px #a6a6a6;
+		5px 0 15px -10px rgba(0, 0, 0, 0.2),
+		-5px 0 15px -10px rgba(0, 0, 0, 0.2);
 }
 
 .main-header .container {
@@ -145,6 +151,7 @@ h3 {
 	left: 50%;
 	transform: translateX(-50%);
 }
+
 .menu {
 	background-color: #ffffff;
 	display: flex;
@@ -182,7 +189,6 @@ li {
 	padding-top: 76px;
 }
 
-
 .mask {
 	padding-top: 23px;
 }
@@ -216,6 +222,7 @@ li {
 	line-height: 26px;
 	color: #333333;
 }
+
 .features {
 	width: 100%;
 }
@@ -341,15 +348,14 @@ li {
 	display: flex;
 	justify-content: center;
 	text-align: center;
-
 }
+
 .features-gray h2 {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
 	padding-top: 30px;
 	padding-bottom: 5px;
-
 	padding-left: 80px;
 }
 
@@ -357,7 +363,6 @@ li {
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
-
 	padding-left: 70px;
 	padding-right: 70px;
 	padding-top: 5px;
@@ -483,11 +488,10 @@ li {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-
 	box-shadow:
-		0 15px 30px -15px #a6a6a6,
-		15px 0 30px -15px #a6a6a6,
-		-15px 0 30px -15px #a6a6a6;
+		0 15px 15px -15px rgba(0, 0, 0, 0.2),
+		15px 0 15px -15px rgba(0, 0, 0, 0.2),
+		-15px 0 15px -15px rgba(0, 0, 0, 0.2);
 }
 
 .form-search-hotels input {
@@ -507,10 +511,8 @@ li {
 	display: flex;
 	flex-direction: row;
 	margin-top: 55px;
-	
 	position: relative;
 	max-width: 460px;
-
 	box-sizing: border-box;
 	white-space: nowrap;
 	overflow: hidden;
@@ -528,7 +530,6 @@ li {
 	max-width: 329px;
 	height: 32px;	
 	border: 2px solid #f2f2f2;
-
 	padding-left: 14px; 
 }
 
@@ -548,10 +549,7 @@ li {
 	flex-direction: row;
 	margin-top: 29px;
 	position: relative;
-
 	width: 460px;
-
-
 	box-sizing: border-box;
 	white-space: nowrap;
 	overflow: hidden;
@@ -588,7 +586,6 @@ li {
 	position: absolute;
 	right: 6px;
 	top: 6px;
-
 	font-size: 21px;
 	line-height: 26px; 
 	color: #c2c2c2;
@@ -617,7 +614,6 @@ li {
 	flex-direction: row;
 	margin-top: 29px;
 	width: 460px;
-
 	box-sizing: border-box;
 }
 
@@ -625,20 +621,16 @@ li {
 	display: flex;
 	flex-direction: row;
 	width: 230px;
-
 	box-sizing: border-box;
-
 	white-space: pre-line;
 }
 
 .children {
 	display: flex;
 	flex-direction: row;
-	/*width: 177px;*/
 	width: 230px;
 	max-width: 230px;
 	min-width: 177px;
-	/*max-width: 177px;*/
 	box-sizing: border-box;
 	white-space: pre-line;
 }
@@ -689,7 +681,6 @@ li {
 	padding-left: 0;
 	text-align: center;
 	height: 32px;
-
 	line-height: 1;
 	border: 2px solid #f2f2f2;
 }
@@ -712,7 +703,6 @@ li {
 }
 
 .adults input {
-	/* было 39*/
 	width: 35px;
 	min-width: 35px;
 	max-width: 35px;
@@ -743,12 +733,9 @@ li {
 	margin-left: 56px;
 	margin-right: 55px;
   border: 2px solid #81b3d2;
- 
  	min-width: 459px;
-	max-width:100%;
-
+	max-width: 100%;
 	text-align: center;
-
   display: flex;
   flex-wrap: wrap;
 }
@@ -833,11 +820,9 @@ input[type="checkbox"] + label:before {
 	content: "\2610";
 	font-size: 26px;
 	font-family: "symbols-sedona";
-
 	position: absolute;
 	top: 0;
 	left: 0;
-
 	width: 15px;
 	height: 15px;
 }
@@ -846,11 +831,9 @@ input[type="checkbox"] + label:hover:before {
 	content: "\2610";
 	font-size: 26px;
 	font-family: "symbols-sedona";
-
 	position: absolute;
 	top: 0;
 	left: 0;
-
 	width: 15px;
 	height: 15px;
 }
@@ -859,14 +842,11 @@ input[type="checkbox"]:disabled + label:before {
 	content: "\2610";
 	font-size: 26px;
 	font-family: "symbols-sedona";
-
 	position: absolute;
 	top: 0;
 	left: 0;
-
 	width: 15px;
 	height: 15px;
-
 	color: #6a6a6a;
 }
 
@@ -874,11 +854,9 @@ input[type="checkbox"]:checked + label:before {
 	content: "\2611";
 	font-size: 26px;
 	font-family: "symbols-sedona";
-
 	position: absolute;
 	top: 0;
 	left: 0;
-
 	width: 15px;
 	height: 15px;
 }
@@ -887,11 +865,9 @@ input[type="checkbox"]:checked + label:hover:before {
 	content: "\2611";
 	font-size: 26px;
 	font-family: "symbols-sedona";
-
 	position: absolute;
 	top: 0;
 	left: 0;
-
 	width: 15px;
 	height: 15px;
 }
@@ -900,14 +876,11 @@ input[type="checkbox"]:disabled:checked + label:before {
 	content: "\2611";
 	font-size: 26px;
 	font-family: "symbols-sedona";
-
 	position: absolute;
 	top: 0;
 	left: 0;
-
 	width: 15px;
 	height: 15px;
-
 	color: #6a6a6a;
 }
 /* конец чекбоксов */
@@ -966,14 +939,11 @@ input[type="checkbox"]:disabled:checked + label:before {
   width: 50px;
   height: 33px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
   outline: none;
-
   padding-bottom: 15px;
 }
 
@@ -998,14 +968,11 @@ input[type="checkbox"]:disabled:checked + label:before {
 .range-toggle {
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
-
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
-	
 	position: absolute;
   top: -9px;
 }
@@ -1026,12 +993,10 @@ input[type="checkbox"]:disabled:checked + label:before {
   display: block;
   margin: 0 auto;
   padding: 6px 34px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -1091,7 +1056,6 @@ input[type="checkbox"]:disabled:checked + label:before {
 	font-size: 12px;
 	line-height: 18px;
 	margin-right: 33px;
-
 	color: rgba(0,0,0,0.3);
 	border-bottom: 1px dotted rgba(0,0,0,0.3);
 }
@@ -1099,7 +1063,6 @@ input[type="checkbox"]:disabled:checked + label:before {
 .sort-types .active {
 	font-size: 12px;
 	line-height: 18px;
-
 	color: #81b3d2;
 	border-bottom: none;
 }
@@ -1107,7 +1070,6 @@ input[type="checkbox"]:disabled:checked + label:before {
 .sort-types .active:hover {
 	font-size: 12px;
 	line-height: 18px;
-
 	color: #81b3d2;
 	border-bottom: none;
 }
@@ -1115,7 +1077,6 @@ input[type="checkbox"]:disabled:checked + label:before {
 .sort-types .active:active {
 	font-size: 12px;
 	line-height: 18px;
-
 	color: #81b3d2;
 	border-bottom: none;
 }
@@ -1123,7 +1084,6 @@ input[type="checkbox"]:disabled:checked + label:before {
 .sort-types a:hover {
 	font-size: 12px;
 	line-height: 18px;
-
 	color: #81b3d2;
 	border-bottom: 1px dotted #81b3d2;
 }
@@ -1131,7 +1091,6 @@ input[type="checkbox"]:disabled:checked + label:before {
 .sort-types a:active {
 	font-size: 12px;
 	line-height: 18px;
-
 	color: #000000;
 	border-bottom: none;
 }
@@ -1226,7 +1185,6 @@ input[type="checkbox"]:disabled:checked + label:before {
 	flex-direction: row;
 	width: 781px;
 	flex-wrap: wrap;
-
 	margin-left: -19px;
 	margin-top: -5px;
 }
@@ -1235,7 +1193,6 @@ input[type="checkbox"]:disabled:checked + label:before {
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
-	
 	margin-bottom: 16px;
 }
 
@@ -1270,7 +1227,6 @@ input[type="checkbox"]:disabled:checked + label:before {
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
-
 	padding-top: 3px;
 	padding-bottom: 4px;
 	padding-left: 10px;
@@ -1288,7 +1244,6 @@ input[type="checkbox"]:disabled:checked + label:before {
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
-
 	padding-top: 3px;
 	padding-bottom: 4px;
 	padding-left: 10px;
@@ -1339,10 +1294,8 @@ input[type="checkbox"]:disabled:checked + label:before {
 	vertical-align: middle;
 	font-size: 20px;
 	color: #81b3d2;
-
 	vertical-align: top;
 	text-align: right;
-
 	margin-top: -7px;
 	padding-bottom: 45px;
 	margin-right: -6px;
@@ -1363,7 +1316,6 @@ input[type="checkbox"]:disabled:checked + label:before {
 	font-size: 14px;
 	line-height: 21px;
 	color: #666666;
-
 	padding-bottom: 10px;
 	padding-left: 5px;
 }
@@ -1381,14 +1333,7 @@ input[type="checkbox"]:disabled:checked + label:before {
 }
 
 .main-footer {
-	width: 1200px;
 	background-color: rgba(255,255,255, 0.9);
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-
-	height: 123px;
 	position: absolute;
 	margin-top: -123px;
 }
@@ -1403,6 +1348,7 @@ input[type="checkbox"]:disabled:checked + label:before {
 	line-height: 26px;
 	font-weight: bold;
 	color: #000000;
+	padding-left: 7px;
 }
 
 .social-buttons {
@@ -1443,6 +1389,7 @@ input[type="checkbox"]:disabled:checked + label:before {
 	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
+	padding-left: 10px;
 }
 
 .made-by {
@@ -1462,7 +1409,7 @@ input[type="checkbox"]:disabled:checked + label:before {
   background-position: -20px -20px;
   background-repeat: no-repeat;
   background-image: url(../img/spritesheet.png);
-	margin-left: 10px;
+	margin-left: 7px;
 }
 
 .website-by:hover:after {
